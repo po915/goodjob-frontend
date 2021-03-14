@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('sign');
+});
+
+Route::any('/sign-up', function () {
+    return view('choose_license');
+});
+
+Route::any('/pricing', function () {
+    return view('pricing');
+});
+
+Route::any('/pay', function () {
+    return view('pay');
 });

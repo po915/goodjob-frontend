@@ -1,0 +1,75 @@
+.bg-base {
+    background-color: #0F2231 !important;
+}
+.txt-dark {
+    color: #0F2231 !important;
+}
+.tm {
+    font-size: 20px;
+}
+.bold {
+    font-weight: 700;
+}
+
+.nav-link-text {
+    color: white;
+}
+.nav-link {
+    color: white !important;
+}
+.nav-active {
+    width: 2px;
+    height: 30px;
+    background-color: #EFC804;
+}
+.dash-logo {
+    height: auto;
+    width: 170px;
+    margin: 50px 20px 25px 10px;
+}
+.sidenav-toggler-line {
+    background-color: #bbbbbb !important;
+}
+.navbar-top {
+    padding: 5px !important;
+    background-color: white !important;
+}
+.page-content {
+    border-radius: 5px;
+    background-color: white;
+}
+#search-btn {
+    border: none;
+    color: white;
+    background-color: #0F2231;
+    height: 46px;
+    border-radius: 25px;
+    margin-left: 20px;
+    padding: 10px 37px;;
+}
+#search-btn:hover {
+    color: #0F2231;
+    background-color: #eaeaea;
+}
+.line-2 {
+    height: 1px;
+    background-color: #c0c0c0;
+    width: 100%;
+}
+.search-result {
+    min-height: 500px;
+}
+.date-1 {
+    margin: 5px;
+}
+.map-1 {
+    height: 100%;
+    /* margin-bottom: 30px; */
+}
+.next-job {
+    width: 100%;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+}

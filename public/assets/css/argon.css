@@ -7088,8 +7088,8 @@ a.badge:focus
 
     display: block;
 
-    margin-bottom: -1px;
-    padding: 1rem 1rem;
+    /* margin-bottom: -1px; */
+    /* padding: 1rem 1rem; */
 
     border: 1px solid #e9ecef; 
     background-color: #fff;
@@ -21601,7 +21601,8 @@ textarea[resize='horizontal']
 .navbar-vertical .navbar-brand > img
 {
     max-width: 100%;
-    max-height: 2rem;
+    max-height: 4rem;
+    margin-top: 40px;
 }
 @media (min-width: 768px)
 {
@@ -21792,7 +21793,7 @@ textarea[resize='horizontal']
 {
     margin-top: 2px;
 }
-.navbar-vertical.navbar-expand-xs .navbar-nav > .nav-item > .nav-link.active
+.navbar-vertical.navbar-expand-xs .navbar-nav > .nav-item > .nav-link:hover
 {
     margin-right: .5rem;
     margin-left: .5rem;
@@ -21800,7 +21801,7 @@ textarea[resize='horizontal']
     padding-left: 1rem;
 
     border-radius: .375rem; 
-    background: #f6f9fc;
+    background: #183654;
 }
 .navbar-vertical.navbar-expand-xs .lavalamp-object
 {
@@ -22679,7 +22680,7 @@ textarea[resize='horizontal']
 .navbar-search-light .input-group
 {
     border-color: rgba(0, 0, 0, .6); 
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgb(243 243 243 / 90%);
 }
 
 .navbar-search-light .input-group-text
@@ -22703,7 +22704,7 @@ textarea[resize='horizontal']
 .navbar-search-light .focused .input-group
 {
     border-color: rgba(0, 0, 0, .9); 
-    background-color: white;
+    background-color: rgb(243 243 243 / 90%);
 }
 
 @media (max-width: 575.98px)

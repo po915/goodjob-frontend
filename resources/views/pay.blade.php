@@ -2,16 +2,36 @@
 
 @section('content')
 <div class="box-center box-2">
-<h1>LOGO</h1>
-<p class="txt-9">Pay and start immediately!</p>
-<p class="txt-10">How do you want to pay today?</p>
+    <h1>LOGO</h1>
+    <p class="txt-9">Pay and start immediately!</p>
+    <p class="txt-10">How do you want to pay today?</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <img src="{{ asset('image/visa.png') }}" alt="visa" class="pay-img">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <img src="{{ asset('image/master.png') }}" alt="master" class="pay-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <img src="{{ asset('image/paypal.png') }}" alt="paypal" class="pay-img">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <img src="{{ asset('image/twint.png') }}" alt="twint" class="pay-img">
+            </div>
+        </div>
+    </div>
+    
 </div>
 @endsection
 
 
 @section('script')
 <script>
-    $("#sign_up").on("click", function() {
+    $(".pay-img").on("click", function() {
         // $.ajax({
         //     url: '/sign-up',
         //     method: 'post',
@@ -23,7 +43,7 @@
         //         alert(data)
         //     }
         // });
-        window.location.href = "/sign-up";
+        window.location.href = "/first";
     })
 </script>
 @endsection

@@ -28,3 +28,15 @@ Route::any('/pricing', function () {
 Route::any('/pay', function () {
     return view('pay');
 });
+
+Route::any('/first', function () {
+    return view('dashboard/first');
+});
+
+Route::any('/employee', function () {
+    return view('dashboard/employee');
+});
+
+Route::any('/search', function () {
+    return view('dashboard/search');
+});

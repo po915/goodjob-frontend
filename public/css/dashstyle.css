@@ -1,3 +1,8 @@
+/**************************************************************** Txt ******************/
+.txt-10 {
+    font-size: 16px;
+}
+
 .bg-base {
     background-color: #0F2231 !important;
 }
@@ -73,3 +78,40 @@
     border-radius: 5px;
     box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
 }
+.fullcalendar-title {
+    font-size: 14px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+.work-time {
+    font-size: 12px;
+    margin-right: 50px;
+}
+
+.next-job-card {
+    background-color: #eee;
+}
+.btn-4 {
+    margin-left: .5rem;
+    background-color: #0F2231;
+    color: #eee;
+}
+.btn-4:hover {
+    background-color: #ececec;
+    color: #0F2231;
+}
+
+.opt-1 {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.opt-1:focus {
+    background-color: #0F2231;
+    color: white;
+}
+
+

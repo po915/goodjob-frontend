@@ -10,7 +10,10 @@
                     <div class="row">
                         
                         <div class="login-snip">
-                            <h1 class="logo">LOGO</h1>
+                            <div class="logo-box">
+                                <img src="{{ asset('image/logo.png') }}" class="logo mx-auto" alt="">
+                            </div>
+                            
                             <h3 class="txt-1">Hi! Nice to See you.</h3>
                             <h5 class="txt-2">Please register or login.</h5>
                             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">New Account</label> 

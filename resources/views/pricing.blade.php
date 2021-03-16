@@ -11,7 +11,9 @@
                         
                         <div class="box-1">
                             <button class="btn-1" id="back"><i class="fa fa-arrow-left"></i> Back</button>
-                            <h1 class="logo">LOGO</h1>
+                            <div class="logo-box">
+                                <img src="{{ asset('image/logo.png') }}" class="logo mx-auto" alt="">
+                            </div>
 
                             <p class="txt-5">Congratulations! <br> You are a great starter!</p>
                             <p class="txt-4">Prices in CHF excl. VAT</p>

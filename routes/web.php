@@ -37,6 +37,10 @@ Route::any('/employee', function () {
     return view('dashboard/employee');
 });
 
+Route::any('/job', function () {
+    return view('dashboard/job');
+});
+
 Route::any('/search', function () {
     return view('dashboard/search');
 });

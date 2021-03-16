@@ -113,5 +113,47 @@
     background-color: #0F2231;
     color: white;
 }
+.box-3 {
+    margin: auto;
+    text-align: center;
+}
 
+.form-1 {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    height: 30px;
+}
+.label-1 {
+    font-weight: 200 !important;
+}
+.box-5 {
+    display: flex;
+}
 
+.map-1 {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+}
+.flex {
+    display: flex !important;
+}
+.dz-default {
+    background-color: #0F2231;
+    color: white;
+}
+.edit-job {
+    background-color: #0F2231;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.edit-job:hover {
+    background-color: #eee;
+    color: #0F2231;
+}
+.shadow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

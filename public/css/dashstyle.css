@@ -2,10 +2,6 @@
 .txt-10 {
     font-size: 16px;
 }
-
-.bg-base {
-    background-color: #0F2231 !important;
-}
 .txt-dark {
     color: #0F2231 !important;
 }
@@ -15,6 +11,79 @@
 .bold {
     font-weight: 700;
 }
+/**************************************************************** Button ******************/
+.btn-4 {
+    margin-left: .5rem;
+    background-color: #0F2231;
+    color: #eee;
+}
+.btn-4:hover {
+    background-color: #ececec;
+    color: #0F2231;
+}
+
+.btn-5 {
+    background-color: #0F2231 !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 5px !important;
+    width: 120px;
+    margin-left: 10px;
+}
+.btn-5:hover {
+    background-color: #ececec;
+    color: #0F2231;
+}
+
+/**************************************************************** BackgroundColor ******************/
+.bg-pending {
+    background-color: #F2CB05;
+}
+.bg-process {
+    background-color: #0F2231;
+}
+.bg-waiting {
+    background-color: #FF9200;
+}
+.bg-cancel {
+    background-color: #E81818;
+}
+.bg-done {
+    background-color: #39BC48;
+}
+
+.text-pending {
+    color: #F2CB05;
+}
+.text-process {
+    color: #0F2231;
+}
+.text-waiting {
+    color: #FF9200;
+}
+.text-cancel {
+    color: #E81818;
+}
+.text-done {
+    color: #39BC48;
+}
+
+.bg-base {
+    background-color: #0F2231 !important;
+}
+
+
+
+/**************************************************************** Box ******************/
+.box-3 {
+    margin: auto;
+    text-align: center;
+}
+.box-5 {
+    display: flex;
+}
+
+
 
 .nav-link-text {
     color: white;
@@ -93,15 +162,6 @@
 .next-job-card {
     background-color: #eee;
 }
-.btn-4 {
-    margin-left: .5rem;
-    background-color: #0F2231;
-    color: #eee;
-}
-.btn-4:hover {
-    background-color: #ececec;
-    color: #0F2231;
-}
 
 .opt-1 {
     width: 150px;
@@ -113,10 +173,6 @@
     background-color: #0F2231;
     color: white;
 }
-.box-3 {
-    margin: auto;
-    text-align: center;
-}
 
 .form-1 {
     border-top: none;
@@ -127,9 +183,6 @@
 }
 .label-1 {
     font-weight: 200 !important;
-}
-.box-5 {
-    display: flex;
 }
 
 .map-1 {
@@ -156,4 +209,21 @@
 }
 .shadow {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.job-status-bar-pending {
+    width: 5px;
+    height: 100%;
+    background-color: #F2CB05;
+    ;
+}
+.job-status-bar-waiting {
+    width: 5px;
+    height: 100%;
+    background-color: #FD9225;
+}
+.radio-box-1 {
+    /* max-width: 150px; */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
 }

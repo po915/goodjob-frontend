@@ -35,7 +35,7 @@
                 <div class="form-group mb-0">
                     <div class="input-group input-group-alternative input-group-merge">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
                         </div>
                         <input class="form-control" placeholder="Enter search term here..." type="text">
                     </div>

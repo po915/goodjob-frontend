@@ -95,7 +95,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/search">
-                                    <i class="fas fa-search"></i>
+                                    <i class="fa fa-search"></i>
                                     <span class="nav-link-text">Search</span>
                                 </a>
                             </li>

@@ -6,26 +6,24 @@
         <div class="container-fluid">
             <div class="header-body">
                 <div class="row align-items-center py-4">
-                    <div class="col-lg-6 col-7">
-                        <h6 class="h2 text-white d-inline-block mb-0 txt-dark">Customers of a Company</h6>
-                        <form class="navbar-search navbar-search-light form-inline mb-3" id="navbar-search-main">
+                    <div class="col-lg-8 col-7 flex">
+                        <h6 class="h2 text-white d-inline-block mb-0 txt-dark my-auto">Customers of a Company</h6>
+                        <form class="navbar-search navbar-search-light form-inline mb-3 my-auto ml-3" id="navbar-search-main">
                             <div class="form-group mb-0">
-                                <div class="input-group input-group-alternative input-group-merge">
+                                <div class="input-group input-group-alternative input-group-merge bg-white">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-search"></i></span>
                                     </div>
-                                    <input class="form-control" placeholder="Enter search term here..." type="text">
+                                    <input class="form-control" placeholder="Search for customers..." type="text">
                                 </div>
                             </div>
                             <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
-                            <button id="search-btn">Search</button>
                         </form>
-               
                     </div>
-                    <div class="col-lg-6 col-5 text-right">
-                        <button type="button" class="btn btn-twitter btn-icon-only rounded-circle">
+                    <div class="col-lg-4 col-5 text-right">
+                        <button type="button" class="btn btn-twitter btn-icon-only rounded-circle" data-toggle="modal" data-target="#addCustomer">
                             <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
                         </button>
                         <div class="dropdown">
@@ -130,6 +128,145 @@
 
     </div>
 
+<div class="modal" id="addCustomer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="card mb-0">
+                <div class="card-header py-3">
+                    <div class="row align-items-center">
+                        <div class="box-3">
+                            <h2 class="mb-0">Register New Customer</h2>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="avatar-upload ml-4">
+                        <div class="avatar-edit">
+                            <form action="" method="post" id="form-image">
+                                <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </form>
+                        </div>
+                        <div class="avatar-preview">
+                            <img class="profile-user-img img-responsive img-circle" id="imagePreview" src="{{ asset('image/primary-avatar.jpg') }}" alt="User profile picture" />
+                        </div>
+                    </div>
+
+                    <form>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-company-name">Company Name</label>
+                                        <input type="text" id="input-company-name" class="form-control "/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-phone-1">Phone number 1</label>
+                                        <input type="text" id="input-phone-1" class="form-control "/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 box-5">
+                                    <div class="col-8 pl-0 pr-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label " for="input-street">Street</label>
+                                            <input type="text" id="input-street" class="form-control "/>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 px-0">
+                                        <div class="form-group">
+                                            <label class="form-control-label " for="input-number">Number</label>
+                                            <input type="text" id="input-number" class="form-control "/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-phone-2">Phone number 2</label>
+                                        <input type="text" id="input-phone-2" class="form-control "/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 box-5">
+                                    <div class="col-4 pl-0 pr-2">
+                                        <div class="form-group">
+                                            <label class="form-control-label " for="input-zip">Zip Code</label>
+                                            <input type="text" id="input-zip" class="form-control "/>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 px-0">
+                                        <div class="form-group">
+                                            <label class="form-control-label " for="input-place">Place</label>
+                                            <input type="text" id="input-place" class="form-control "/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-email">Email</label>
+                                        <input type="text" id="input-email" class="form-control "/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="form-control-label">Place of Use</label>
+                                <div class="form-check mb-2">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Like company headquaters
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-contact-person">Contact person</label>
+                                        <input type="text" id="input-contact-person" class="form-control "/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-website">Website</label>
+                                        <input type="email" id="input-website" class="form-control "/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-assigned-employee">Assigned Employees</label>
+                                        <input type="email" id="input-assigned-employee" class="form-control "/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label " for="input-branch">Branch</label>
+                                        <input type="email" id="input-branch" class="form-control "/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <button type="button" class="update-job px-3 py-2 btn-5">Save</button>
+                                <button type="button" class="px-3 py-2 btn-5" data-dismiss="modal">Cancel</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 @endsection
@@ -151,5 +288,19 @@
         // });
         window.location.href = "/search";
     })
+    $(document).ready(function () {
+        $("#imageUpload").change(function (data) {
+            var imageFile = data.target.files[0];
+            var reader = new FileReader();
+            reader.readAsDataURL(imageFile);
+
+            reader.onload = function (evt) {
+                $("#imagePreview").attr("src", evt.target.result);
+                $("#imagePreview").hide();
+                $("#imagePreview").fadeIn(650);
+            };
+        });
+    });
+
 </script>
 @endsection

@@ -30,7 +30,7 @@
     </div>
     <!-- Page content -->
     <div class="container-fluid">
-        <div class="card">
+        <div class="card mb-0">
             <div class="card-header border-0">
                 <div class="row">
                     <div class="col">
@@ -409,7 +409,7 @@
 <div class="modal" id="jobUpdate">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="card">
+            <div class="card mb-0">
                 <div class="card-header py-3">
                     <div class="row align-items-center">
                         <div class="box-3 flex">

@@ -7,7 +7,9 @@
             <div class="header-body">
                 <div class="row align-items-center py-4">
                     <div class="col-lg-8 col-7 flex">
-                        <h6 class="h1 text-white d-inline-block mb-0 txt-dark my-auto">Customers of a Company</h6>
+                        <a href="/contacts" class="h1 text-white d-inline-block mb-0 txt-dark my-auto medium txt-11">All Contacts</h1>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class="h1 text-white d-inline-block mb-0 txt-dark my-auto">Customers</a>
                         <form class="navbar-search navbar-search-light form-inline mb-3 my-auto ml-3" id="navbar-search-main">
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-alternative input-group-merge bg-white">
@@ -48,15 +50,9 @@
                 <div class="row">
                     <div class="col">
 
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>ORT</option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Kanton </option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Assigned employee </option>
-                        </select>
+                        <button class="btn-6">Export Customers</button>
+                        <button class="btn-6">Import Customers</button>
+                        <button class="btn-6" data-toggle="modal" data-target="#addCustomer"><i class="fa fa-plus"></i> Add New Customer</button>
 
                     </div>
                 </div>
@@ -76,8 +72,6 @@
                             <th scope="col" class="sort" data-sort="address">Address</th>
                             <th scope="col" class="sort" data-sort="phone">Phone number</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Contact person</th>
-                            <th scope="col">Assigned</th>
                             <th scope="col">Branch</th>
                         </tr>
                     </thead>
@@ -109,12 +103,6 @@
                                 example@example.com
                             </td>
                             <td>
-                                Jane Snow
-                            </td>
-                            <td>
-                                Start Name
-                            </td>
-                            <td>
                                 Industry Sectors
                             </td>
                         </tr>
@@ -141,17 +129,29 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="avatar-upload ml-4">
-                        <div class="avatar-edit">
-                            <form action="" method="post" id="form-image">
-                                <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                <label for="imageUpload"></label>
-                            </form>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="avatar-upload ml-4">
+                                <div class="avatar-edit">
+                                    <form action="" method="post" id="form-image">
+                                        <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                        <label for="imageUpload"></label>
+                                    </form>
+                                </div>
+                                <div class="avatar-preview">
+                                    <img class="profile-user-img img-responsive img-circle" id="imagePreview" src="{{ asset('image/primary-avatar.jpg') }}" alt="User profile picture" />
+                                </div>
+                            </div>
                         </div>
-                        <div class="avatar-preview">
-                            <img class="profile-user-img img-responsive img-circle" id="imagePreview" src="{{ asset('image/primary-avatar.jpg') }}" alt="User profile picture" />
+                        <div class="col-lg-4 text-right flex">
+                            <p>Corporate Client &nbsp;&nbsp;&nbsp;</p>
+                            <label class="custom-toggle custom-toggle-default">
+                                <input type="checkbox" checked="">
+                                <span class="custom-toggle-slider rounded-circle" data-label-off="No" data-label-on="Yes"></span>
+                            </label>
                         </div>
                     </div>
+                    
 
                     <form>
                         <div>
@@ -215,14 +215,14 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <!-- <div>
                                 <label for="" class="form-control-label">Place of Use</label>
                                 <div class="form-check mb-2">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input" value="">Like company headquaters
                                     </label>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="row">
                                 <div class="col-lg-6">
@@ -241,10 +241,10 @@
 
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label class="form-control-label " for="input-assigned-employee">Assigned Employees</label>
                                         <input type="email" id="input-assigned-employee" class="form-control "/>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">

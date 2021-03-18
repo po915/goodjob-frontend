@@ -15,6 +15,9 @@
 
         <link rel="stylesheet" href="{{ asset('assets/vendor/select2/dist/css/select2.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/vendor/quill/dist/quill.core.css') }}">
+
+        
+        <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
         
         <link href="{{ asset('css/argon.css?v=1.1.0') }}" rel="stylesheet">
         <link href="{{ asset('css/dashstyle.css') }}" rel="stylesheet">
@@ -82,7 +85,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/prices">
+                                <a class="nav-link" href="/place">
                                     <i class="ni ni-pin-3"></i>
                                     <span class="nav-link-text">Places</span>
                                 </a>
@@ -122,7 +125,7 @@
                         <ul class="navbar-nav align-items-center ml-md-auto">
                             <li class="nav-item d-xl-none">
                                 <!-- Sidenav toggler -->
-                                <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                                <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main" id="sidebar-toggler">
                                     <div class="sidenav-toggler-inner">
                                         <i class="sidenav-toggler-line"></i>
                                         <i class="sidenav-toggler-line"></i>
@@ -300,6 +303,10 @@
         <script src="{{ asset('assets/vendor/js-cookie/js.cookie.js') }}"></script>
         <script src="{{ asset('assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
+
+        <!-- Map box -->
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
         <!-- Optional JS -->
         <script src="{{ asset('assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>

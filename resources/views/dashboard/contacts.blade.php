@@ -7,7 +7,9 @@
             <div class="header-body">
                 <div class="row align-items-center py-4">
                     <div class="col-lg-8 col-7 flex">
-                        <h6 class="h1 text-white d-inline-block mb-0 txt-dark my-auto">Customers of a Company</h6>
+                        <h1 class="text-white d-inline-block mb-0 txt-dark my-auto">All Contacts</h1>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="/contacts-customer" class="h1 text-white d-inline-block mb-0 txt-dark my-auto medium txt-11">Customers</a>
                         <form class="navbar-search navbar-search-light form-inline mb-3 my-auto ml-3" id="navbar-search-main">
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-alternative input-group-merge bg-white">
@@ -76,7 +78,6 @@
                             <th scope="col" class="sort" data-sort="address">Address</th>
                             <th scope="col" class="sort" data-sort="phone">Phone number</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Contact person</th>
                             <th scope="col">Assigned</th>
                             <th scope="col">Branch</th>
                         </tr>
@@ -107,9 +108,6 @@
                             </td>
                             <td class="email">
                                 example@example.com
-                            </td>
-                            <td>
-                                Jane Snow
                             </td>
                             <td>
                                 Start Name

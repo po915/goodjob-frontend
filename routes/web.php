@@ -49,6 +49,18 @@ Route::any('/customer', function () {
     return view('dashboard/customer');
 });
 
+Route::any('/contacts', function () {
+    return view('dashboard/contacts');
+});
+
+Route::any('/contacts-customer', function () {
+    return view('dashboard/contacts-1');
+});
+
+Route::any('/place', function () {
+    return view('dashboard/place');
+});
+
 Route::any('/search', function () {
     return view('dashboard/search');
 });

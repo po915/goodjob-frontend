@@ -7,7 +7,7 @@
             <div class="header-body">
                 <div class="row align-items-center py-4">
                     <div class="col-lg-6 col-7">
-                        <h6 class="h2 text-white d-inline-block mb-0 txt-dark">Hello, Jane</h6>
+                        <h6 class="h1 text-white d-inline-block mb-0 txt-dark">Hello, Jane</h6>
                         <p>Welcome! This is your personal dashboard.</p>
                     </div>
                     <div class="col-lg-6 col-5 text-right">
@@ -38,10 +38,11 @@
                             <h5 class="h3 mb-0">Calendar</h5>
                         </div>
 
-                        <div class="col-lg-9 mt-3 mt-lg-0 text-lg-right">
-                            <a href="#" class="btn btn-sm btn-neutral" data-calendar-view="month">Month</a>
-                            <a href="#" class="btn btn-sm btn-neutral" data-calendar-view="basicWeek">Week</a>
-                            <a href="#" class="btn btn-sm btn-neutral" data-calendar-view="basicDay">Day</a>
+                        <div class="col-lg-9 mt-3 mt-lg-0 text-lg-right px-0">
+                            <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="month">M</button>
+                            <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="basicWeek">W</button>
+                            <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="basicDay">D</button>
+                            
                             <button type="button" class="btn btn-icon-only rounded-circle fullcalendar-btn-prev btn-4">
                                 <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
                             </button>
@@ -58,7 +59,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12" style="padding-bottom: 30px;">
                 <div class="card map-1">
-                    <div id="map"></div>
+                    <div id="map-1"></div>
                 </div>
             </div>
         </div>
@@ -225,17 +226,7 @@
       async
     ></script>
 <script>
-    function initMap() {
-        const uluru = { lat: -25.344, lng: 131.036 };
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-        });
-        const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-        });
-    }
+    
     $(".pay-img").on("click", function() {
         // $.ajax({
         //     url: '/sign-up',
@@ -249,6 +240,79 @@
         //     }
         // });
         window.location.href = "/search";
+    })
+
+    mapboxgl.accessToken = "pk.eyJ1IjoiY29tbWE5MTUiLCJhIjoiY2trajB6czdkMjluazJ3cGF1ampyeHMwbCJ9.MK9s2uQZxIaJMZiBCk3bjA";
+
+    var geojson = {
+        type: "FeatureCollection",
+        features: [
+            {
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: [-77.032, 38.913],
+                },
+                properties: {
+                    title: "Mapbox",
+                    description: "Washington, D.C.",
+                },
+            },
+        ],
+    };
+
+    // var selfposition = [
+    //     {
+    // type: 'Feature',
+    // geometry: {
+    //   type: 'Point',
+    //   coordinates: [-77.031952, 38.913184]
+    // }
+    // ]
+
+    var map = new mapboxgl.Map({
+        container: "map-1",
+        style: "mapbox://styles/mapbox/streets-v9",
+        center: [-77.032, 38.913],
+        zoom: 9,
+    });
+
+    // add markers to map
+    geojson.features.forEach(function (marker) {
+        var markerbox = document.createElement("div");
+        var mark      = document.createElement("div");
+        var avatar    = document.createElement("img");
+        var after     = document.createElement("img");
+        markerbox.className = "marker-box";
+        mark.className    = "marker";
+        avatar.className    = "mark-avatar";
+        after.className     = "mark-after";
+        avatar.src = "{{ asset('image/map-avatar.jpg') }}"
+        after.src  = "{{ asset('image/ripple.svg') }}"
+        mark.append(avatar);
+        
+        markerbox.append(mark);
+        markerbox.append(after);
+
+        new mapboxgl.Marker(markerbox,{ offset: [-28, -50] })
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(map);
+    });
+    map.on('load', function() {
+        var btn = document.getElementsByClassName('sidenav-toggler');
+        // console.log(btn);
+        btn.onclick = function() {
+            alert();
+        }
+        // fixButton.onclick = function() {
+        //     // map.resize();
+        //     alert();
+        // }
+        
+    });
+    $(".sidenav-toggler").on("click", function() {
+        // map.resize();
+        // console.log(map);
     })
 </script>
 @endsection

@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.css') }}">
+        <!-- <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.css') }}"> -->
+        <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar5.1/main.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
         <!-- <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css"> -->
 
@@ -23,7 +24,7 @@
         <link href="{{ asset('css/dashstyle.css') }}" rel="stylesheet">
         <link href="{{ asset('css/dashrwd.css') }}" rel="stylesheet">
         <link href="{{ asset('css/rwd.css') }}" rel="stylesheet">
-
+        @yield('style')
     </head>
     <body>
         <!-- Sidenav -->
@@ -127,9 +128,8 @@
                                 <!-- Sidenav toggler -->
                                 <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main" id="sidebar-toggler">
                                     <div class="sidenav-toggler-inner">
-                                        <i class="sidenav-toggler-line"></i>
-                                        <i class="sidenav-toggler-line"></i>
-                                        <i class="sidenav-toggler-line"></i>
+                                        
+                                        <i class="fa fa-angle-double-left"></i>
                                     </div>
                                 </div>
                             </li>
@@ -311,7 +311,8 @@
         <script src="{{ asset('assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>
         <script src="{{ asset('assets/vendor/moment/min/moment.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script>
+        <!-- <script src="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script> -->
+        <script src="{{ asset('assets/vendor/fullcalendar5.1/main.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/select2/dist/js/select2.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>

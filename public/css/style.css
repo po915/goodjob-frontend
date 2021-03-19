@@ -1,3 +1,12 @@
+/* @font-face {
+    font-family: 'Europa Regular';
+    src: url('../font/Europa Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Europa Regular' !important;
+} */
+
 /**************************************************************** Txt ******************/
 .txt-1 {
     font-size: 30px;
@@ -29,18 +38,25 @@
 .txt-3 {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 2vh;
+    font-weight: 500;
+}
+
+.txt-03 {
+    color: white;
+    font-size: 18px;
 }
 .txt-4 {
     text-align: center;
-    
+    color: white;
 }
 .txt-5 {
     text-align: center;
     color: white;
     font-size: 24px;
     margin-top: 2vh;
+    font-weight: 700;
 }
 .txt-6 {
     font-size: 14px !important;
@@ -64,6 +80,36 @@
     font-weight: 600;
 
 }
+.txt-03 {
+    font-size: 16px !important;
+    color: #69757F;
+    font-weight: 700;
+}
+
+.txt-01 {
+    color: #fff;
+    position: relative;
+}
+.txt-01::after {
+    top: 85px;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #aabbd7;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+.txt-02 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.txt-05 {
+    font-size: 34px;
+    font-weight: 700;
+}
 
 
 /************************************************************************************** CARD ***************  */
@@ -75,8 +121,24 @@
     box-shadow: none !important;
     margin-bottom: 15px;
 }
+.card-1:hover .txt-03 {
+    color: white !important;
+}
+.card-1:hover .txt-04 {
+    color: white !important;
+}
+.card-1:hover .btn-2 {
+    color: white !important;
+}
+.card-1:hover .i-1 {
+    opacity: 1 !important;
+}
+.card-1:hover {
+    background-color: #0D1E2B;
+}
+
 .card-1 .card-body {
-    padding: 1rem !important;
+    padding: 10px 20px;
 }
 :root {
     --input-padding-x: 1.5rem;
@@ -86,7 +148,10 @@
 .card-2 {
     background-color: #0D1E2B;
     box-shadow: none;
+    margin-bottom: 20px;
 }
+
+
 
 .card-2 .card-body {
     padding: 20px !important;
@@ -102,13 +167,19 @@
     border: none;
     border-radius: 5px;
 }
-
+.btn-1:hover {
+    background-color: #6e8ca0;
+    color: #0F2231;
+}
 .btn-2 {
     background-color: #0F2231;
     border: none;
     border-radius: 50%;
     padding: 15px;
-    color: #69757E;
+    color: #69757F;
+}
+.btn-2:hover {
+    
 }
 .btn-3 {
     background-color: #f2cb05;
@@ -128,12 +199,11 @@
 /**********************************************************Icon  *******************************************/
 
 .i-1 {
-    width: 45px;
-    font-size:36px; 
-    color:#69757E;
+    width: 35px;
+    opacity: 0.5;
 }
 .i-2 {
-    font-size: 12px;
+    font-size: 12px !important;
     color: #f2cb05;
 }
 .i-3 {
@@ -170,6 +240,15 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.box-03 {
+    opacity: 0.5;
+}
+
+.box-03:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
 
 /********************************************************  */
 
@@ -178,7 +257,7 @@
 }
 .line {
     width: 100%;
-    height: 2px;
+    height: 1px;
     margin-top: 15px;
     background-color: white;
 }
@@ -220,26 +299,6 @@ body {
     text-align: center;
 }
 
-.txt-01 {
-    color: #fff;
-    position: relative;
-}
-.txt-01::after {
-    top: 85px;
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 1px;
-    background: #aabbd7;
-    bottom: 0;
-    left: calc(50% - 25px);
-}
-.txt-02 {
-    color: #fff;
-    font-size: 20px;
-    margin-top: 20px;
-}
 
 .login-snip {
     width: 80%;

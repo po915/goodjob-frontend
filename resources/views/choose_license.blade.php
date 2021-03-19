@@ -3,7 +3,9 @@
 @section('content')
 <div class="container-fluid">
     <div class="row no-gutter">
-        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="d-none d-md-flex col-md-4 col-lg-6 f-img-box">
+            <img src="{{ asset('image/first.png') }}" class="f-img" alt="">
+        </div>
         <div class="col-md-8 col-lg-6" style="padding: 0px">
             <div class="login d-flex align-items-center">
                 <div class="container">
@@ -16,23 +18,19 @@
                             </div>
 
                             <p class="txt-3">Choose your license Package</p>
-                            <p class="txt-4">Monthly prices in CHF excluding VAT, annual payment</p>
+                            <p class="txt-4">Monthly prices in CHF excluding VAT, <br> annual payment</p>
 
                             <!-- License Package card -->
                             <div class="card card-1">
-                                <!-- Card body -->
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                        <!-- Avatar -->
-                                        <i class="fa fa-send-o i-1" style="font-size:36px; color:#69757E"></i>
+                                            <img src="{{ asset('image/l-1.png') }}" class="i-1" alt="free">
                                         </div>
                                         <div class="col ml--2">
-                                        <h4 class="mb-0">
-                                            <a href="#!" style="color: #69757E">FREEBIE</a>
-                                        </h4>
-                                        <p class="text-sm text-muted mb-0">1 User</p>
-                                        <p class="text-sm text-muted mb-0">Free Version</p>
+                                        <p class="mb-0 txt-03">FREEBIE</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">1 User</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">Free Version</p>
                                         </div>
                                         <div class="col-auto">
                                         <button type="button" class="btn-2"><i class="fa fa-arrow-right"></i></button>
@@ -43,19 +41,15 @@
 
                             <!-- License Package card -->
                             <div class="card card-1">
-                                <!-- Card body -->
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                        <!-- Avatar -->
-                                        <i class="fa fa-fighter-jet i-1"></i>
+                                            <img src="{{ asset('image/l-2.png') }}" class="i-1" alt="free">
                                         </div>
                                         <div class="col ml--2">
-                                        <h4 class="mb-0">
-                                            <a href="#!" style="color: #69757E">HIGHFIVE!</a>
-                                        </h4>
-                                        <p class="text-sm text-muted mb-0">Up to 5 Users</p>
-                                        <p class="text-sm text-muted mb-0">9.90 / month</p>
+                                        <p class="mb-0 txt-03">HIGHFIVE!</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">Up to 5 Users</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">9.90 / month</p>
                                         </div>
                                         <div class="col-auto">
                                         <button type="button" class="btn-2"><i class="fa fa-arrow-right"></i></button>
@@ -66,19 +60,15 @@
 
                             <!-- License Package card -->
                             <div class="card card-1">
-                                <!-- Card body -->
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                        <!-- Avatar -->
-                                        <i class="fa fa-plane i-1"></i>
+                                            <img src="{{ asset('image/l-3.png') }}" class="i-1" alt="free">
                                         </div>
                                         <div class="col ml--2">
-                                        <h4 class="mb-0">
-                                            <a href="#!" style="color: #69757E">FLY HIGH</a>
-                                        </h4>
-                                        <p class="text-sm text-muted mb-0">Up to 10 Users</p>
-                                        <p class="text-sm text-muted mb-0">19.90 / month</p>
+                                        <p class="mb-0 txt-03">FLY HIGH</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">Up to 10 Users</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">19.90 / month</p>
                                         </div>
                                         <div class="col-auto">
                                         <button type="button" class="btn-2"><i class="fa fa-arrow-right"></i></button>
@@ -89,19 +79,15 @@
 
                             <!-- License Package card -->
                             <div class="card card-1">
-                                <!-- Card body -->
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                        <!-- Avatar -->
-                                        <i class="fa fa-space-shuttle i-1"></i>
+                                            <img src="{{ asset('image/l-4.png') }}" class="i-1" alt="free">
                                         </div>
                                         <div class="col ml--2">
-                                        <h4 class="mb-0">
-                                            <a href="#!" style="color: #69757E">GALACTIC</a>
-                                        </h4>
-                                        <p class="text-sm text-muted mb-0">Unlimited Users</p>
-                                        <p class="text-sm text-muted mb-0">29.90 / month</p>
+                                        <p class="mb-0 txt-03">GALACTIC</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">Unlimited Users</p>
+                                        <p class="text-sm text-muted mb-0 txt-04">29.90 / month</p>
                                         </div>
                                         <div class="col-auto">
                                         <button type="button" class="btn-2"><i class="fa fa-arrow-right"></i></button>

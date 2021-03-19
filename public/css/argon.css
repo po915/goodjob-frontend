@@ -18160,7 +18160,6 @@ a.text-darker:focus
 .btn-inner--icon i:not(.fas):not(.fab)
 {
     position: relative;
-    top: 2px;
 }
 
 .btn-link
@@ -18682,8 +18681,8 @@ a.text-darker:focus
 
 .btn-icon-only
 {
-    width: 2.375rem;
-    height: 2.375rem;
+    width: 2rem;
+    height: 2rem;
     padding: 0;
 }
 
@@ -21731,6 +21730,7 @@ textarea[resize='horizontal']
 {
     padding-right: 1.5rem; 
     padding-left: 1.5rem;
+    margin-top: 30px;
 }
 .navbar-vertical.navbar-expand-xs > [class*='container']
 {
@@ -22422,6 +22422,10 @@ textarea[resize='horizontal']
     }
     .sidenav .sidenav-toggler
     {
+        /* background-color: #67779d;
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px 0px 0px 10px; */
         padding: 1.5rem;
     }
 }

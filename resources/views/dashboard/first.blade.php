@@ -1,5 +1,38 @@
 @extends('layout.dash')
 
+@section('style')
+<style>
+/* .fc-scrollgrid {
+    display: none;
+} */
+.fc-timeGridDay-view table thead {
+    display: none;
+}
+
+.fc-header-toolbar {
+    display: none !important;
+}
+.fc .fc-timegrid-col.fc-day-today {
+    background-color: #fff !important;
+}
+.fc-v-event .fc-event-title-container {
+    border-left: 5px solid #F2CB05;
+}
+.fc-v-event .fc-event-title {
+    font-size: 16px;
+    font-weight: 600;
+    position:absolute;top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+.calendar-title {
+    font-size: 14px;
+}
+
+</style>
+
+@endsection('style')
 @section('content')
     <!-- Header -->
     <div class="header">
@@ -7,8 +40,8 @@
             <div class="header-body">
                 <div class="row align-items-center py-4">
                     <div class="col-lg-6 col-7">
-                        <h6 class="h1 text-white d-inline-block mb-0 txt-dark">Hello, Jane</h6>
-                        <p>Welcome! This is your personal dashboard.</p>
+                        <h6 class="h1 text-white d-inline-block txt-dark">Hello, Jane</h6>
+                        <p>Welcome - This is your personal dashboard.</p>
                     </div>
                     <div class="col-lg-6 col-5 text-right">
                         <button type="button" class="btn btn-twitter btn-icon-only rounded-circle">
@@ -33,27 +66,27 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card card-calendar">
-                    <div class="card-header" style="display: flex;">
+                    <div class="card-header flex">
                         <div class="col-lg-3 mt-3 mt-lg-0 text-lg-left">
                             <h5 class="h3 mb-0">Calendar</h5>
                         </div>
 
                         <div class="col-lg-9 mt-3 mt-lg-0 text-lg-right px-0">
-                            <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="month">M</button>
+                            <!-- <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="month">M</button>
                             <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="basicWeek">W</button>
-                            <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="basicDay">D</button>
+                            <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="basicDay">D</button> -->
                             
-                            <button type="button" class="btn btn-icon-only rounded-circle fullcalendar-btn-prev btn-4">
+                            <button type="button" class="btn btn-icon-only rounded-circle calendar-btn-prev btn-4">
                                 <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
                             </button>
-                            <h6 class="fullcalendar-title d-inline-block mb-0"></h6>
-                            <button type="button" class="btn btn-icon-only rounded-circle fullcalendar-btn-next btn-4">
+                            <h6 class="calendar-title d-inline-block mb-0">October, 2020</h6>
+                            <button type="button" class="btn btn-icon-only rounded-circle calendar-btn-next btn-4">
                                 <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
                             </button>
                         </div>
                     </div>
                     <div class="card-body p-0">
-                        <div class="calendar" data-toggle="calendar" id="calendar"></div>
+                        <div class="f-calendar" id="f-calendar"></div>
                     </div>
                 </div>
             </div>
@@ -251,7 +284,7 @@
                 type: "Feature",
                 geometry: {
                     type: "Point",
-                    coordinates: [-77.032, 38.913],
+                    coordinates: [9.29, 47.54],
                 },
                 properties: {
                     title: "Mapbox",
@@ -273,7 +306,7 @@
     var map = new mapboxgl.Map({
         container: "map-1",
         style: "mapbox://styles/mapbox/streets-v9",
-        center: [-77.032, 38.913],
+        center: [9.29, 47.54],
         zoom: 9,
     });
 
@@ -314,5 +347,55 @@
         // map.resize();
         // console.log(map);
     })
+
+    var height = $("#map-1").height()-78;
+
+    $(".calendar-btn-next").on("click", function() {
+        $(".fc-next-button").click();
+    });
+    $(".calendar-btn-prev").on("click", function() {
+        $(".fc-prev-button").click();
+    });
+    $(document).ready(function() {
+        $(".calendar-title").text($(".fc-toolbar-title").text());
+    })
+    document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("f-calendar");
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            displayEventTime: false,
+            eventTextColor: "#0f2231",
+            allDaySlot: false,
+            height: height,
+            expandRows: true,
+            slotMinTime: "00:00",
+            slotMaxTime: "24:00",
+            headerToolbar: {
+                left: "prev,next today",
+                center: "title",
+                right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+            },
+            initialView: "timeGridDay",
+            initialDate: "2021-03-19",
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            selectable: true,
+            nowIndicator: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: [
+                {   
+                    groupId: 111,
+                    title: "Maintenance in House Blabla",
+                    start: "2021-03-19T09:00:00",
+                    end  : "2021-03-19T11:00:00",
+                    color: "#FCF5CD",
+                },
+            ]
+        });
+
+        calendar.render();
+    });
+
+
 </script>
 @endsection

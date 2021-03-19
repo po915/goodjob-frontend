@@ -25,6 +25,7 @@
     margin-left: .5rem;
     background-color: #0F2231;
     color: #eee;
+    margin-bottom: 2px;
 }
 .btn-4:hover {
     background-color: #ececec;
@@ -362,3 +363,118 @@
     line-height: 34px;
     margin: auto;
 }
+
+.card-header .h3 {
+    font-size: 21px;
+}
+
+.f-calendar {
+    max-height: 500px;
+}
+
+
+.main .form .custom-select-wrapper {
+    width: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .main .form .custom-select-wrapper select {
+    display: none;
+  }
+  .main .form .custom-select {
+    position: relative;
+    margin: 0 0.5rem 0 0;
+  }
+  .main .form .custom-select-trigger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.65rem 2.5rem 0.65rem 1rem;
+    margin-bottom: 1rem;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: #252a32;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  }
+  .main .form .custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 50%;
+    right: 1rem;
+    margin-top: -3px;
+    border-bottom: 1px solid #252a32;
+    border-right: 1px solid #252a32;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    transform-origin: 50% 0;
+  }
+  .main .form .custom-select.opened .custom-select-trigger::after {
+    margin-top: 3px;
+    transform: rotate(-135deg) translateY(-50%);
+  }
+  .main .form .custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0.65rem 0 1rem 0;
+    background: #ffffff;
+    color: #252a32;
+    opacity: 0;
+    z-index: 999;
+    visibility: hidden;
+    pointer-events: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-1rem);
+  }
+  .main .form .custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+  .main .form .custom-options::before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 100%;
+    right: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-bottom: -4px;
+    background: #ffffff;
+    transform: rotate(45deg);
+  }
+  .main .form .option-hover::before {
+    background: #5b687b;
+  }
+  .main .form .custom-option {
+    position: relative;
+    display: block;
+    padding: 0.65rem 1rem;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: #252a32;
+    cursor: pointer;
+  }
+  .main .form .custom-option:hover {
+    background: #5b687b;
+    color: #ffffff;
+  }

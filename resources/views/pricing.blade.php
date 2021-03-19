@@ -3,7 +3,9 @@
 @section('content')
 <div class="container-fluid">
     <div class="row no-gutter">
-        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="d-none d-md-flex col-lg-6 f-img-box">
+            <img src="{{ asset('image/first.png') }}" class="f-img" alt="">
+        </div>
         <div class="col-md-8 col-lg-6" style="padding: 0px">
             <div class="login d-flex align-items-center">
                 <div class="container">
@@ -21,16 +23,16 @@
                             <div class="container">
                                 <div class="row">
                                     
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 box-03">
                                         <div class="card card-pricing text-center card-2">
                                             <div class="card-header bg-transparent">
-                                                <i class="fa fa-fighter-jet i-3"></i>
+                                                <img src="{{ asset('image/l-2.png') }}" class="i-3" alt="high">
                                                 <h4 class="text-uppercase ls-1 text-white mb-0">HIGH FIVE</h4>
                                                 <div class="line"></div>
                                             </div>
                                             <div class="card-body">
                                                 <p class="txt-7">CHF</p>
-                                                <div class="display-2 text-white">29.90</div>
+                                                <div class="txt-05 text-white">29.90</div>
                                                 <span class="text-white txt-6">per month, paid annually</span>
                                                 <ul class="list-unstyled list-1">
                                                     <li>
@@ -57,16 +59,16 @@
                                         <button class="btn-3">Start Package</button>
                                     </div>
 
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 box-03">
                                         <div class="card card-pricing text-center card-2">
                                             <div class="card-header bg-transparent">
-                                                <i class="fa fa-plane i-3"></i>
+                                                <img src="{{ asset('image/l-3.png') }}" class="i-3" alt="high">
                                                 <h4 class="text-uppercase ls-1 text-white mb-0">FLY HIGH</h4>
                                                 <div class="line"></div>
                                             </div>
                                             <div class="card-body">
                                                 <p class="txt-7">CHF</p>
-                                                <div class="display-2 text-white">19.90</div>
+                                                <div class="txt-05 text-white">19.90</div>
                                                 <span class="text-white txt-6">per month, paid annually</span>
                                                 <ul class="list-unstyled list-1">
                                                     <li>
@@ -93,16 +95,16 @@
                                         <button class="btn-3">Start Package</button>
                                     </div>
 
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 box-03">
                                         <div class="card card-pricing text-center card-2">
                                             <div class="card-header bg-transparent">
-                                                <i class="fa fa-space-shuttle i-3"></i>
+                                                <img src="{{ asset('image/l-4.png') }}" class="i-3" alt="high">
                                                 <h4 class="text-uppercase ls-1 text-white mb-0">GALACTIC</h4>
                                                 <div class="line"></div>
                                             </div>
                                             <div class="card-body">
                                                 <p class="txt-7">CHF</p>
-                                                <div class="display-2 text-white">49.90</div>
+                                                <div class="txt-05 text-white">49.90</div>
                                                 <span class="text-white txt-6">per month, paid annually</span>
                                                 <ul class="list-unstyled list-1">
                                                     <li>

@@ -1,11 +1,11 @@
-/* @font-face {
-    font-family: 'Europa Regular';
-    src: url('../font/Europa Regular.ttf') format('truetype');
+@font-face {
+    font-family: 'Abel-Regular';
+    src: url('../font/Abel-Regular.ttf') format('truetype');
 }
 
 body {
-    font-family: 'Europa Regular' !important;
-} */
+    font-family: 'Abel-Regular' !important;
+}
 
 /**************************************************************** Txt ******************/
 .txt-1 {
@@ -107,7 +107,7 @@ body {
     margin-top: 20px;
 }
 .txt-05 {
-    font-size: 34px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -154,7 +154,7 @@ body {
 
 
 .card-2 .card-body {
-    padding: 20px !important;
+    padding: 2.5 rem !important;
     padding-top: 0px !important;
 }
 
@@ -254,6 +254,7 @@ body {
 
 .logo {
     text-align: center;
+    width: 220px;
 }
 .line {
     width: 100%;
@@ -265,6 +266,8 @@ body {
     padding: 15px !important;
 }
 .list-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 20px;
 }
 
@@ -560,7 +563,7 @@ input[type="password"]::-ms-reveal {
 
 .custom-checkbox {
     color: #6e8ca0;
-    display: block;
+    display: flex;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
@@ -570,6 +573,8 @@ input[type="password"]::-ms-reveal {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* Hide the browser's default checkbox */
@@ -584,12 +589,12 @@ input[type="password"]::-ms-reveal {
 /* Create a custom checkbox */
 .checkmark {
     position: absolute;
-    top: 10px;
     left: 0;
     height: 20px;
     width: 20px;
     border: 2px solid #6e8ca0;
     border-radius: 2px;
+    align-self: center;
 }
 
 /* On mouse-over, add a grey background color */

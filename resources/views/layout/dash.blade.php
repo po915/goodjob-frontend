@@ -320,10 +320,12 @@
         <script src="{{ asset('assets/vendor/quill/dist/quill.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
+
         <!-- Argon JS -->
         <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
         <!-- Demo JS - remove this in your project -->
         <script src="{{ asset('assets/js/demo.min.js') }}"></script>
+        <script src="{{ asset('js/custom.js') }}"></script>
 
 
         <script>

@@ -352,9 +352,11 @@
 
     $(".calendar-btn-next").on("click", function() {
         $(".fc-next-button").click();
+        $(".calendar-title").text($(".fc-toolbar-title").text());
     });
     $(".calendar-btn-prev").on("click", function() {
         $(".fc-prev-button").click();
+        $(".calendar-title").text($(".fc-toolbar-title").text());
     });
     $(document).ready(function() {
         $(".calendar-title").text($(".fc-toolbar-title").text());

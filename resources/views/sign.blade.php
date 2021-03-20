@@ -53,7 +53,7 @@
                             <div class="row">
                                 <div class="col-lg-6 text-left">
                                     <label class="custom-checkbox">
-                                        By registering you agree to our terms and conditions.
+                                        <div>By registering you agree to our terms and conditions.</div>
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                     </label>

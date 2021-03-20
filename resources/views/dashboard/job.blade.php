@@ -33,26 +33,50 @@
         <div class="card mb-0">
             <div class="card-header border-0">
                 <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-icon-only rounded-circle btn-4">
-                            <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
-                        </button>
-                        <h6 class="d-inline-block mb-0 txt-10">March, 2021</h6>
-                        <button type="button" class="btn btn-icon-only rounded-circle btn-4">
-                            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
-                        </button>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Period</option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Status: </option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Customer: </option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Support level: </option>
-                        </select>
+                    <div class="row row-1">
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-icon-only rounded-circle btn-4">
+                                <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
+                            </button>
+                            <h6 class="d-inline-block mb-0 txt-10">March, 2021</h6>
+                            <button type="button" class="btn btn-icon-only rounded-circle btn-4">
+                                <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+                            </button>
+                        </div>
+                        <!-- <div class="col-auto">
+                            <form>
+                                <div class="bootstrap-tagsinput">
+                                    <span class="tag badge badge-primary">Bucharest<span data-role="remove"></span></span> <span class="tag badge badge-primary"> Cluj<span data-role="remove"></span></span>
+                                    <span class="tag badge badge-primary"> Iasi<span data-role="remove"></span></span> <span class="tag badge badge-primary"> Timisoara<span data-role="remove"></span></span>
+                                    <span class="tag badge badge-primary"> Piatra Neamt<span data-role="remove"></span></span> <input type="text" placeholder="" />
+                                </div>
+                                <input type="text" class="form-control" value="View: Today, Support: Jane Snow" data-toggle="tags" style="display: none;" />
+                            </form>
+                        </div> -->
+                        <div class="col-auto">
+                            <form class="form-1 row-1 row">
+                                <select name="period" id="period" class="cus-select col" placeholder="Period">
+                                    <option value="tiger">Tiger</option>
+                                    <option value="lion">Lion</option>
+                                    <option value="elephant">Elephant</option>
+                                </select>
+                                <select name="status" id="status" class="cus-select col" placeholder="Status">
+                                    <option value="carnivora">Carnivora</option>
+                                    <option value="herbivora">Herbivora</option>
+                                    <option value="omnivora">Omnivora</option>
+                                </select>
+                                <select name="customer" id="customer" class="cus-select col" placeholder="Customer">
+                                    <option value="carnivora">Carnivora</option>
+                                    <option value="herbivora">Herbivora</option>
+                                    <option value="omnivora">Omnivora</option>
+                                </select>
+                                <select name="level" id="level" class="cus-select col" placeholder="Support Level">
+                                    <option value="carnivora">Lorem</option>
+                                    <option value="herbivora">Ipsum</option>
+                                    <option value="omnivora">Dolor</option>
+                                </select>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,7 +98,6 @@
                             <th scope="col" class="sort" data-sort="place">Place of Use</th>
                             <th scope="col" class="sort" data-sort="reponsible">Responsible</th>
                             <th scope="col" class="sort" data-sort="status">Status</th>
-                            <th></th>
                         </tr>
                     </thead>
                     <tbody class="list">
@@ -109,7 +132,7 @@
                                 <span class="text-pending">●</span>
                                 <small class="status">Pending </small>
                             </td>
-                            <td class="text-right">
+                            <!-- <td class="text-right">
                                 <div class="dropdown">
                                     <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-ellipsis-v"></i>
@@ -119,7 +142,7 @@
                                         <a class="dropdown-item" href="#">Delete</a>
                                     </div>
                                 </div>
-                            </td>
+                            </td> -->
                         </tr>
 
                         <tr data-toggle="modal" data-target="#jobUpdate">
@@ -153,17 +176,6 @@
                                 <span class="text-waiting">●</span>
                                 <small class="status">Waiting </small>
                             </td>
-                            <td class="text-right">
-                                <div class="dropdown">
-                                    <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-ellipsis-v"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                        <a class="dropdown-item" href="#">Edit</a>
-                                        <a class="dropdown-item" href="#">Delete</a>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         
                         
@@ -175,7 +187,7 @@
         </div>
 
 
-<div class="modal" id="jobEdit">
+        <div class="modal" id="jobEdit">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="card">
@@ -197,13 +209,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-jobtitle">Job title</label>
-                                        <input type="text" id="input-jobtitle" class="form-control form-1"/>
+                                        <input type="text" id="input-jobtitle" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-customer">Customer</label>
-                                        <input type="text" id="input-customer" class="form-control form-1"/>
+                                        <input type="text" id="input-customer" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>
@@ -211,13 +223,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-start-date">Start date</label>
-                                        <input type="date" id="input-start-date" class="form-control form-1"/>
+                                        <input type="date" id="input-start-date" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-end-date">End date</label>
-                                        <input type="date" id="input-end-date" class="form-control form-1"/>
+                                        <input type="date" id="input-end-date" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>
@@ -227,13 +239,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-place">Place</label>
-                                            <input type="text" id="input-place" class="form-control form-1"/>
+                                            <input type="text" id="input-place" class="form-control form-4"/>
                                         </div>
                                     </div>
-                                    <div class="col-4 px-0">
+                                    <div class="col-lg-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-zip-code">Zip Code</label>
-                                            <input type="text" id="input-zip-code" class="form-control form-1"/>
+                                            <input type="text" id="input-zip-code" class="form-control form-4"/>
                                         </div>
                                     </div>
                                 </div>
@@ -241,13 +253,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-place">Place</label>
-                                            <input type="text" id="input-place" class="form-control form-1"/>
+                                            <input type="text" id="input-place" class="form-control form-4"/>
                                         </div>
                                     </div>
-                                    <div class="col-4 px-0">
+                                    <div class="col-lg-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-zip-code">Zip Code</label>
-                                            <input type="text" id="input-zip-code" class="form-control form-1"/>
+                                            <input type="text" id="input-zip-code" class="form-control form-4"/>
                                         </div>
                                     </div>
                                 </div>
@@ -257,13 +269,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-phone-number">Phone number</label>
-                                        <input type="text" id="input-phone-number" class="form-control form-1"/>
+                                        <input type="text" id="input-phone-number" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-email">Email</label>
-                                        <input type="email" id="input-email" class="form-control form-1"/>
+                                        <input type="email" id="input-email" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>
@@ -272,13 +284,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-contact-person">Contact person</label>
-                                        <input type="text" id="input-contact-person" class="form-control form-1"/>
+                                        <input type="text" id="input-contact-person" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-assigned-employee">Assigned Employees</label>
-                                        <input type="email" id="input-assigned-employee" class="form-control form-1"/>
+                                        <input type="email" id="input-assigned-employee" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>
@@ -426,13 +438,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="job-name-1">Job name</label>
-                                        <input type="text" id="job-name-1" class="form-control form-1"/>
+                                        <input type="text" id="job-name-1" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="job-name-2">Job name</label>
-                                        <input type="text" id="job-name-2" class="form-control form-1"/>
+                                        <input type="text" id="job-name-2" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>
@@ -440,13 +452,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="start-date">Start date</label>
-                                        <input type="date" id="start-date" class="form-control form-1"/>
+                                        <input type="date" id="start-date" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="end-date">End date</label>
-                                        <input type="date" id="end-date" class="form-control form-1"/>
+                                        <input type="date" id="end-date" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>
@@ -456,13 +468,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="street">Street</label>
-                                            <input type="text" id="street" class="form-control form-1"/>
+                                            <input type="text" id="street" class="form-control form-4"/>
                                         </div>
                                     </div>
                                     <div class="col-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="number">Number</label>
-                                            <input type="text" id="number" class="form-control form-1"/>
+                                            <input type="text" id="number" class="form-control form-4"/>
                                         </div>
                                     </div>
                                 </div>
@@ -470,13 +482,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-place">Place</label>
-                                            <input type="text" id="input-place" class="form-control form-1"/>
+                                            <input type="text" id="input-place" class="form-control form-4"/>
                                         </div>
                                     </div>
                                     <div class="col-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-zip-code">Zip Code</label>
-                                            <input type="text" id="input-zip-code" class="form-control form-1"/>
+                                            <input type="text" id="input-zip-code" class="form-control form-4"/>
                                         </div>
                                     </div>
                                 </div>
@@ -486,13 +498,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-phone-number">Phone number</label>
-                                        <input type="text" id="input-phone-number" class="form-control form-1"/>
+                                        <input type="text" id="input-phone-number" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-email">Email</label>
-                                        <input type="email" id="input-email" class="form-control form-1"/>
+                                        <input type="email" id="input-email" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>
@@ -501,13 +513,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-contact-person">Contact person</label>
-                                        <input type="text" id="input-contact-person" class="form-control form-1"/>
+                                        <input type="text" id="input-contact-person" class="form-control form-4"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-assigned-employee">Assigned Employees</label>
-                                        <input type="email" id="input-assigned-employee" class="form-control form-1"/>
+                                        <input type="email" id="input-assigned-employee" class="form-control form-4"/>
                                     </div>
                                 </div>
                             </div>

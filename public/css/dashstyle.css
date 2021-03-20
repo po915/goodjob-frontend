@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Abel-Regular';
+    src: url('../font/Abel-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Abel-Regular' !important;
+}
+
+
 /**************************************************************** Txt ******************/
 .txt-10 {
     font-size: 16px;
@@ -259,7 +269,7 @@
     color: white;
 }
 
-.form-1 {
+.form-4 {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -372,38 +382,48 @@
     max-height: 500px;
 }
 
-
-.main .form .custom-select-wrapper {
-    width: 100%;
+ /***************** Custom Select Box */
+.form-1 {
+    width: fit-content;
+    height: auto;
+}
+.form-1 .cus-select-wrapper {
+    width: fit-content;
+    min-width: 150px;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-  }
-  .main .form .custom-select-wrapper select {
+    height: 32px;
+}
+.form-1 .cus-select-wrapper select {
     display: none;
-  }
-  .main .form .custom-select {
+}
+.form-1 .cus-select {
     position: relative;
     margin: 0 0.5rem 0 0;
-  }
-  .main .form .custom-select-trigger {
+}
+.form-1 .cus-select-trigger {
     position: relative;
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: 0.65rem 2.5rem 0.65rem 1rem;
+    padding: 0.2rem 2.5rem 0.2rem 1rem;
     margin-bottom: 1rem;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
-    color: #252a32;
+    color: #0f2231;
     background: #ffffff;
-    border: none;
-    outline: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-  }
-  .main .form .custom-select-trigger:after {
+    border: 2px solid #0f2231;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
+}
+.form-1 .cus-select-trigger:hover {
+    background: #0f2231;
+    color: #fff;
+}
+
+.form-1 .cus-select-trigger:after {
     position: absolute;
     display: block;
     content: "";
@@ -412,17 +432,17 @@
     top: 50%;
     right: 1rem;
     margin-top: -3px;
-    border-bottom: 1px solid #252a32;
-    border-right: 1px solid #252a32;
+    border-bottom: 3px solid #6E8CA0;
+    border-right: 3px solid #6E8CA0;
     transform: rotate(45deg) translateY(-50%);
     transition: all 0.3s ease-in-out;
     transform-origin: 50% 0;
-  }
-  .main .form .custom-select.opened .custom-select-trigger::after {
+}
+.form-1 .cus-select.opened .cus-select-trigger::after {
     margin-top: 3px;
     transform: rotate(-135deg) translateY(-50%);
-  }
-  .main .form .custom-options {
+}
+.form-1 .custom-options {
     position: absolute;
     display: block;
     top: 100%;
@@ -442,14 +462,14 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
     transition: all 0.2s ease-in-out;
     transform: translateY(-1rem);
-  }
-  .main .form .custom-select.opened .custom-options {
+}
+.form-1 .cus-select.opened .custom-options {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
     transform: translateY(0);
-  }
-  .main .form .custom-options::before {
+}
+.form-1 .custom-options::before {
     position: absolute;
     display: block;
     content: "";
@@ -460,11 +480,11 @@
     margin-bottom: -4px;
     background: #ffffff;
     transform: rotate(45deg);
-  }
-  .main .form .option-hover::before {
+}
+.form-1 .option-hover::before {
     background: #5b687b;
-  }
-  .main .form .custom-option {
+}
+.form-1 .custom-option {
     position: relative;
     display: block;
     padding: 0.65rem 1rem;
@@ -473,8 +493,10 @@
     line-height: inherit;
     color: #252a32;
     cursor: pointer;
-  }
-  .main .form .custom-option:hover {
+}
+.form-1 .custom-option:hover {
     background: #5b687b;
     color: #ffffff;
-  }
+}
+
+ /***************** Custom Select Box */

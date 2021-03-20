@@ -34,26 +34,41 @@
             <div class="card-header border-0">
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn btn-icon-only rounded-circle btn-4">
-                            <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
-                        </button>
-                        <h6 class="d-inline-block mb-0 txt-10">March, 2021</h6>
-                        <button type="button" class="btn btn-icon-only rounded-circle btn-4">
-                            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
-                        </button>
-
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Team: Support</option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Location: </option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Assigned: </option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Support level: </option>
-                        </select>
+                        <div class="row row-1">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-icon-only rounded-circle btn-4">
+                                    <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
+                                </button>
+                                <h6 class="d-inline-block mb-0 txt-10">March, 2021</h6>
+                                <button type="button" class="btn btn-icon-only rounded-circle btn-4">
+                                    <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <form class="form-1 row-1 row">
+                                    <select name="team" id="team" class="cus-select col" placeholder="Team: Support">
+                                        <option value="tiger">Tiger</option>
+                                        <option value="lion">Lion</option>
+                                        <option value="elephant">Elephant</option>
+                                    </select>
+                                    <select name="location" id="location" class="cus-select col" placeholder="Locations">
+                                        <option value="carnivora">Carnivora</option>
+                                        <option value="herbivora">Herbivora</option>
+                                        <option value="omnivora">Omnivora</option>
+                                    </select>
+                                    <select name="assigned" id="assigned" class="cus-select col" placeholder="Assigned">
+                                        <option value="carnivora">Carnivora</option>
+                                        <option value="herbivora">Herbivora</option>
+                                        <option value="omnivora">Omnivora</option>
+                                    </select>
+                                    <select name="level" id="level" class="cus-select col" placeholder="Support Level">
+                                        <option value="carnivora">Lorem</option>
+                                        <option value="herbivora">Ipsum</option>
+                                        <option value="omnivora">Dolor</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -207,7 +222,8 @@
         //     }
         // });
         window.location.href = "/search";
-    })
+    });
+
     
 </script>
 @endsection

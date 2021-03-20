@@ -11,4 +11,10 @@
     .logo {
         max-width: 70%;
     }
+    .row-1 {
+        justify-content: center;
+    }
+    .form-1 {
+        margin-top: 10px;
+    }
 }

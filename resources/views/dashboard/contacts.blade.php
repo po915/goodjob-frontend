@@ -50,15 +50,25 @@
                 <div class="row">
                     <div class="col">
 
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>ORT</option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Kanton </option>
-                        </select>
-                        <select name="xxx" id="xxx" class="opt-1">
-                            <option value="0" selected>Assigned employee </option>
-                        </select>
+                        <div class="container-fluid">
+                            <form class="form-1 row-1 row">
+                                <select name="ort" id="ort" class="cus-select col" placeholder="ORT">
+                                    <option value="tiger">Tiger</option>
+                                    <option value="lion">Lion</option>
+                                    <option value="elephant">Elephant</option>
+                                </select>
+                                <select name="kanton" id="kanton" class="cus-select col" placeholder="Kanton">
+                                    <option value="carnivora">Carnivora</option>
+                                    <option value="herbivora">Herbivora</option>
+                                    <option value="omnivora">Omnivora</option>
+                                </select>
+                                <select name="employee" id="employee" class="cus-select col" placeholder="Assigned Employee">
+                                    <option value="carnivora">Carnivora</option>
+                                    <option value="herbivora">Herbivora</option>
+                                    <option value="omnivora">Omnivora</option>
+                                </select>
+                            </form>
+                        </div>
 
                     </div>
                 </div>

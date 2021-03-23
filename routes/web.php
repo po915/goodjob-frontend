@@ -41,10 +41,6 @@ Route::any('/job', function () {
     return view('dashboard/job');
 });
 
-Route::any('/calendar', function () {
-    return view('dashboard/calendar');
-});
-
 Route::any('/customer', function () {
     return view('dashboard/customer');
 });
@@ -63,4 +59,12 @@ Route::any('/place', function () {
 
 Route::any('/search', function () {
     return view('dashboard/search');
+});
+
+Route::any('/calendar', function () {
+    return view('dashboard/calendar');
+});
+
+Route::any('/schedule', function () {
+    return view('dashboard/schedule');
 });

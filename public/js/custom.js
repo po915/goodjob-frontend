@@ -46,3 +46,5 @@ $(".custom-option").on("click", function () {
     $(this).parents(".cus-select").removeClass("opened");
     $(this).parents(".cus-select").find(".cus-select-trigger").text($(this).text());
 });
+
+window.addEventListener('scroll', this.handleScroll, true);

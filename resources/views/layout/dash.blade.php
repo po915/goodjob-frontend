@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.css') }}"> -->
-        <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar5.1/main.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar5.1/main.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
         <!-- <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css"> -->
 
@@ -43,7 +43,6 @@
                                 <i class="sidenav-toggler-line"></i>
                                 <i class="sidenav-toggler-line"></i>
                                 <i class="sidenav-toggler-line"></i>
-                                <!-- <i class="fa fa-angle-double-left" style="color:white"></i> -->
                             </div>
                         </div>
                     </div>
@@ -128,8 +127,10 @@
                                 <!-- Sidenav toggler -->
                                 <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main" id="sidebar-toggler">
                                     <div class="sidenav-toggler-inner">
-                                        
-                                        <i class="fa fa-angle-double-left"></i>
+                                        <i class="sidenav-toggler-line"></i>
+                                        <i class="sidenav-toggler-line"></i>
+                                        <i class="sidenav-toggler-line"></i>
+                                        <!-- <i class="fa fa-angle-double-left"></i> -->
                                     </div>
                                 </div>
                             </li>
@@ -306,7 +307,7 @@
 
         <!-- Map box -->
         <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
-
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         <!-- Optional JS -->
         <script src="{{ asset('assets/vendor/chart.js/dist/Chart.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script>

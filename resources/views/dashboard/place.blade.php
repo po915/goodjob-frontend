@@ -7,7 +7,7 @@
             <div class="header-body">
                 <div class="row align-items-center py-4">
                     <div class="col-lg-8 col-7">
-                        <h1 class="text-white d-inline-block mb-0 txt-dark my-auto">Places</h1>
+                        <h1 class="d-inline-block mb-0 txt-dark my-auto">Places</h1>
                         <p>These are you appointments nearby.</p>
                     </div>
                     <div class="col-lg-4 col-5 text-right">
@@ -49,9 +49,9 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="card bg-grey distance-card">
+                        <div class="card bg-grey distance-card mb-1" job-id="1">
                             <!-- Card body -->
-                            <div class="card-body py-2">
+                            <div class="card-body py-4">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <h2>15 km</h2>
@@ -71,11 +71,121 @@
                             </div>
                         </div>
 
-                        <div class="card card-sub-distance">
-                            <h4 class="mt-4 ml-3">Update printer driver</h4>
+                        <div class="card card-sub-distance bg-grey mb-1 detail-1">
+                            <h4 class="mt-4 ml-3 ">Update printer driver</h4>
                             <p class="ml-3">COO1</p>
-                            <div class="container-fluid">
+                            <div class="container-fluid px-0">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-13"><span>Start Date: </span>Thursday, July 24th | 5:30 PM</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-13"><span>End Date: </span>Thursday, July 24th | 5:30 PM</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>CustomerCoop WareHouse:</span></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"><span>Address: </span>Staingess 7 4234 lorem ipsum</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>Contact Person: </span>Jane Snow</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"><span>Responsible: </span>Jane Winter</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>Phone: </span>+1 234 567 8901</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"><span>Place of Use: </span>Somewhere anywhere</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>Email: </span>loremipsum@www.com</p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <button class="btn-8"><i class="fa fa-folder"></i> Request a job</button>
+                                </div>
+                                
+                            </div>
+                        </div>
 
+                        <div class="card bg-grey distance-card mb-1" job-id="2">
+                            <!-- Card body -->
+                            <div class="card-body py-4">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <h2>15 km</h2>
+                                    </div>
+                                    <div class="col ml--2">
+                                        <h4 class="mb-0">
+                                            <a href="#!">AVIA gas station</a>
+                                        </h4>
+                                        <p class="text-sm text-muted mb-0">Lorem ipsum dolor sit amet consectetur</p>
+                                        
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="text-success">●</span>
+                                        <small>Done</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-sub-distance bg-grey mb-1 detail-2">
+                            <h4 class="mt-4 ml-3 ">Update printer driver</h4>
+                            <p class="ml-3">COO1</p>
+                            <div class="container-fluid px-0">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-13"><span>Start Date: </span>Thursday, July 24th | 5:30 PM</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-13"><span>End Date: </span>Thursday, July 24th | 5:30 PM</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>CustomerCoop WareHouse:</span></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"><span>Address: </span>Staingess 7 4234 lorem ipsum</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>Contact Person: </span>Jane Snow</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"><span>Responsible: </span>Jane Winter</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>Phone: </span>+1 234 567 8901</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"><span>Place of Use: </span>Somewhere anywhere</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
+                                        <p class="txt-14"> <span>Email: </span>loremipsum@www.com</p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <button class="btn-8"><i class="fa fa-folder"></i> Request a job</button>
+                                </div>
+                                
                             </div>
                         </div>
 
@@ -92,6 +202,10 @@
 
 @section('script')
 <script>
+    $(".distance-card").on("click", function() {
+        var job_id = $(this).attr('job-id');
+        $(".detail-"+job_id).slideToggle("slow");
+    })
     $(".pay-img").on("click", function() {
         // $.ajax({
         //     url: '/sign-up',

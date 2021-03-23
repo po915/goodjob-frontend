@@ -7,9 +7,9 @@
             <div class="header-body">
                 <div class="row align-items-center py-4">
                     <div class="col-lg-8 col-7 flex">
-                        <h1 class="text-white d-inline-block mb-0 txt-dark my-auto">All Contacts</h1>
+                        <h1 class="d-inline-block mb-0 txt-dark my-auto txt-12">All Contacts</h1>
                         &nbsp;&nbsp;&nbsp;
-                        <a href="/contacts-customer" class="h1 text-white d-inline-block mb-0 txt-dark my-auto medium txt-11">Customers</a>
+                        <a href="/contacts-customer" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Customers</a>
                         <form class="navbar-search navbar-search-light form-inline mb-3 my-auto ml-3" id="navbar-search-main">
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-alternative input-group-merge bg-white">

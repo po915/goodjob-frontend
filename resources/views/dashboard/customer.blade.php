@@ -7,7 +7,7 @@
             <div class="header-body">
                 <div class="row align-items-center py-4">
                     <div class="col-lg-8 col-7 flex">
-                        <h6 class="h1 text-white d-inline-block mb-0 txt-dark my-auto">Customers of a Company</h6>
+                        <h6 class="h1 d-inline-block mb-0 txt-dark my-auto">Customers of a Company</h6>
                         <form class="navbar-search navbar-search-light form-inline mb-3 my-auto ml-3" id="navbar-search-main">
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-alternative input-group-merge bg-white">

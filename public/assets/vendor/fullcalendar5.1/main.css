@@ -1078,7 +1078,7 @@ A VERTICAL event
       content: '\00a0'; /* make sure there's at least an empty space to create height for height syncing */
     }
 .fc .fc-timegrid-slot-minor {
-    border-top-style: dotted;
+    border: none;
   }
 .fc .fc-timegrid-slot-label-cushion {
     display: inline-block;
@@ -1095,7 +1095,8 @@ A VERTICAL event
 }
 .fc .fc-timegrid-axis-cushion,
   .fc .fc-timegrid-slot-label-cushion {
-    padding: 0 4px;
+    position: absolute;
+    left: 0px;
   }
 .fc {
 

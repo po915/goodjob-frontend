@@ -16,14 +16,17 @@
 
         <link rel="stylesheet" href="{{ asset('assets/vendor/select2/dist/css/select2.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/vendor/quill/dist/quill.core.css') }}">
-
         
         <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
         
+        <link href="{{ asset('css/chosen.css') }}" rel="stylesheet">
         <link href="{{ asset('css/argon.css?v=1.1.0') }}" rel="stylesheet">
         <link href="{{ asset('css/dashstyle.css') }}" rel="stylesheet">
         <link href="{{ asset('css/dashrwd.css') }}" rel="stylesheet">
         <link href="{{ asset('css/rwd.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/flags.css') }}" rel="stylesheet">
+        
+
         @yield('style')
     </head>
     <body>
@@ -321,12 +324,13 @@
         <script src="{{ asset('assets/vendor/quill/dist/quill.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
-
+        <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
         <!-- Argon JS -->
         <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
         <!-- Demo JS - remove this in your project -->
         <script src="{{ asset('assets/js/demo.min.js') }}"></script>
         <script src="{{ asset('js/custom.js') }}"></script>
+        <script src="{{ asset('js/jquery.flagstrap.min.js') }}"></script>
 
 
         <script>

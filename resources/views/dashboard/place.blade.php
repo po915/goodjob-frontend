@@ -74,7 +74,7 @@
                         <div class="card card-sub-distance bg-grey mb-1 detail-1">
                             <h4 class="mt-4 ml-3 ">Update printer driver</h4>
                             <p class="ml-3">COO1</p>
-                            <div class="container-fluid px-0">
+                            <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
                                         <p class="txt-13"><span>Start Date: </span>Thursday, July 24th | 5:30 PM</p>
@@ -144,7 +144,7 @@
                         <div class="card card-sub-distance bg-grey mb-1 detail-2">
                             <h4 class="mt-4 ml-3 ">Update printer driver</h4>
                             <p class="ml-3">COO1</p>
-                            <div class="container-fluid px-0">
+                            <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
                                         <p class="txt-13"><span>Start Date: </span>Thursday, July 24th | 5:30 PM</p>

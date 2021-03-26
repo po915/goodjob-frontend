@@ -1953,17 +1953,14 @@ pre code
 {
     width: 100%;
     margin-bottom: 1rem;
-
     color: #525f7f;
     background-color: transparent;
 }
 .table th,
 .table td
 {
-    padding: 1rem;
-
+    padding: .6rem;
     vertical-align: top;
-
     border-top: 1px solid #e9ecef;
 }
 .table thead th
@@ -6017,7 +6014,7 @@ input[type='button'].btn-block
 .card-header
 {
     margin-bottom: 0;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1.5rem;
 
     border-bottom: 1px solid rgba(0, 0, 0, .05); 
     background-color: #fff;
@@ -23970,8 +23967,8 @@ textarea[resize='horizontal']
 {
     font-size: .65rem;
 
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
 
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -26731,7 +26728,7 @@ table.dataTable tbody > tr.selected
 }
 .dropzone-single.dz-max-files-reached .dz-message:hover
 {
-    opacity: 1;
+    opacity: .7;
 }
 
 .dz-preview-single

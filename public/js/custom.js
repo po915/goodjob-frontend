@@ -4,8 +4,13 @@ $(".cus-select").each(function () {
     var classes = $(this).attr("class"),
         id = $(this).attr("id"),
         name = $(this).attr("name");
+    var preset = $(this).find(":selected").text();
     var template = '<div class="' + classes + '">';
-    template += '<span class="cus-select-trigger">' + $(this).attr("placeholder") + "</span>";
+    if(preset) {
+        template += '<span class="cus-select-trigger">' + preset + "</span>";
+    } else {
+        template += '<span class="cus-select-trigger">' + $(this).attr("placeholder") + "</span>";
+    }
     template += '<div class="custom-options">';
     $(this)
         .find("option")
@@ -53,8 +58,14 @@ $(".custom-select-1").each(function () {
     var classes = $(this).attr("class"),
         id = $(this).attr("id"),
         name = $(this).attr("name");
+    var preset = $(this).find(":selected").text();
     var template = '<div class="' + classes + '">';
-    template += '<span class="custom-select-1-trigger">' + $(this).attr("placeholder") + "</span>";
+    if(preset) {
+        template += '<span class="custom-select-1-trigger">' + preset + "</span>";
+    } else {
+        template += '<span class="custom-select-1-trigger">' + $(this).attr("placeholder") + "</span>";
+    }
+    
     template += '<div class="custom-option-1s">';
     $(this)
         .find("option")

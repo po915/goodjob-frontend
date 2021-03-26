@@ -216,7 +216,7 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
             eventTextColor: "#0f2231",
             allDaySlot: false,
-            height: 800,
+            height: 650,
             expandRows: true,
             slotMinTime: "00:00",
             slotMaxTime: "24:00",

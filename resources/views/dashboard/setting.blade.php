@@ -255,8 +255,8 @@
                                 <div class="form-group">
                                     <label class="form-control-label" for="pay-terms">Payment terms</label>
                                     <select id="pay-terms" class="custom-select-1" placeholder="Payment terms">
-                                        <option value="1">Next 30days</option>
-                                        <option value="2">Next 15days</option>
+                                        <option value="next_30">Next 30days</option>
+                                        <option value="2" selected>Next 15days</option>
                                     </select>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                                     <label class="form-control-label" for="bill-time">Bill time in</label>
                                     <select id="bill-time" class="custom-select-1" placeholder="Bill time in">
                                         <option value="1">15 minutes</option>
-                                        <option value="2">30 minutes</option>
+                                        <option value="2" selected>30 minutes</option>
                                     </select>
                                 </div>
                             </div>
@@ -639,9 +639,9 @@
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-merge">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                        <span class="input-group-text form-preicon-sm"><i class="fa fa-search"></i></span>
                                     </div>
-                                    <input class="form-control" placeholder="Keyword" type="text">
+                                    <input class="form-control form-control-sm" placeholder="Keyword" type="text">
                                 </div>
                             </div>
                             <button class="btn-10 my-auto"><i class="fa fa-plus"></i> ADD TEAM</button>    
@@ -781,9 +781,9 @@
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-merge">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                        <span class="input-group-text form-preicon-sm"><i class="fa fa-search"></i></span>
                                     </div>
-                                    <input class="form-control" placeholder="Keyword" type="text">
+                                    <input class="form-control form-control-sm" placeholder="Keyword" type="text">
                                 </div>
                             </div>
                             <button class="btn-10 my-auto"><i class="fa fa-plus"></i> ADD STAFF MEMBER</button>    
@@ -869,7 +869,7 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="auto-message">Send customer auto messages to</label>
+                                    <label class="form-control-label" for="auto-message">Send auto messages to</label>
                                     <select id="auto-message" class="custom-select-1" placeholder="Auto messages to">
                                         <option value="1" selected>Customer</option>
                                         <option value="2">Seller</option>

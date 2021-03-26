@@ -132,10 +132,7 @@
                     </tbody>
                 </table>
             </div>
-
-
         </div>
-
     </div>
 
 <div class="modal" id="addCustomer">

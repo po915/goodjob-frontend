@@ -2,9 +2,13 @@
     font-family: 'Abel-Regular';
     src: url('../font/Abel-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Railway';
+    src: url('../font/Raleway-Regular.ttf') format('truetype');
+}
 
 body {
-    font-family: 'Abel-Regular' !important;
+    font-family: 'Railway' !important;
 }
 
 /************* Custom Scroll Bar **************/
@@ -223,7 +227,7 @@ body {
     border-radius: 25px;
     border: none;
     margin-left: 30px;
-    padding: .5rem 1.5rem;
+    padding: .15rem 1.5rem;
 }
 .btn-10:hover {
     background-color: #0F2231;
@@ -304,6 +308,7 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .box-6 p {
+    font-size: 14px;
     font-weight: 600;
 }
 .box-7 {
@@ -420,7 +425,7 @@ body {
     line-height: inherit;
     color: #0f2231;
     background: #ffffff;
-    border: 2px solid #0f2231;
+    border: 1px solid #0f2231;
     border-radius: 25px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
 }
@@ -493,7 +498,7 @@ body {
 .form-1 .custom-option {
     position: relative;
     display: block;
-    padding: 0.65rem 1rem;
+    padding: 0.3rem 1rem;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
@@ -692,21 +697,20 @@ body {
     height: 34px;
     margin-bottom: 0;
     border-radius: 100%;
-    background: #fff;
-    border: 1px solid #d2d6de;
+    background: #2699FB;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     font-weight: normal;
     transition: all 0.2s ease-in-out;
 }
 .avatar-upload .avatar-edit input + label:hover {
-    background: #f1f1f1;
+    background: #66b7ff;
     border-color: #d6d6d6;
 }
 .avatar-upload .avatar-edit input + label:after {
     content: "\f030";
     font-family: 'FontAwesome';
-    color: #337ab7;
+    color: #fff;
     position: absolute;
     left: 0;
     right: 0;
@@ -720,7 +724,10 @@ body {
 }
 
 .f-calendar {
-    max-height: 500px;
+    /* max-height: 500px; */
+}
+.fc-direction-ltr .fc-timegrid-now-indicator-arrow {
+    border-width: 10px 31px 10px 11px;
 }
 
 /* Date Picker */
@@ -1010,7 +1017,7 @@ li.date_picker_week_day {
 } 
 .tab-pane {
     background-color: #fff;
-    border-bottom: 1px solid #f2f2f2;
+    /* border-bottom: 1px solid #f2f2f2; */
 }
 
 #country-select button {
@@ -1080,7 +1087,7 @@ li.date_picker_week_day {
 }
 .custom-select-1-trigger:hover {
     color: #8898aa;
-    border-color: #5e72e4;
+    border-color: #0F2231;
     outline: 0;
     background-color: #fff;
     box-shadow: 0 3px 9px rgb(50 50 9 / 0%), 3px 4px 8px rgb(94 114 228 / 10%);
@@ -1263,4 +1270,24 @@ li.date_picker_week_day {
     margin-bottom: 0px; 
     height: 150px; 
     resize:none;
+}
+
+.form-preicon-sm {
+    padding: 0rem .75rem;
+}
+.profile-nav .nav-link {
+    border: none;
+    background-color: #0F2231 !important;
+}
+.profile-nav {
+    border: none !important;
+}
+.profile-nav .nav-link:hover {
+    color: #F2CB2D !important;
+}
+.profile-nav .active {
+    color: #F2CB2D !important;
+}
+.profile-avatar-edit {
+    right: 0px !important;
 }

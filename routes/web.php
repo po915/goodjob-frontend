@@ -72,3 +72,7 @@ Route::any('/schedule', function () {
 Route::any('/setting', function () {
     return view('dashboard/setting');
 });
+
+Route::any('/profile', function () {
+    return view('dashboard/profile');
+});

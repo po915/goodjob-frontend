@@ -43,36 +43,8 @@
             <div class="card-header bg-base">
                 <div class="container-fluid">
                     <form class="form-2 row-1 row">
-                        <p class="h4 mb-0 text-white my-auto col">Sory By : </p>
-                        <select name="ort" id="ort" class="cus-select col" placeholder="Status : All">
-                            <option value="tiger">Waiting</option>
-                            <option value="lion">Pending</option>
-                            <option value="elephant">Done</option>
-                        </select>
-                        <select name="kanton" id="kanton" class="cus-select col" placeholder="Customers">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
-                        <select name="employee" id="employee" class="cus-select col" placeholder="Date">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
-                        <select name="employee" id="employee" class="cus-select col" placeholder="Calendar">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
-                        <select name="employee" id="employee" class="cus-select col" placeholder="Workspace">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
-                        <select name="employee" id="employee" class="cus-select col" placeholder="Team">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
-                        <select name="employee" id="employee" class="cus-select col" placeholder="Staff Skills">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
-                        <select name="employee" id="employee" class="cus-select col" placeholder="Contractor">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
-                        <select name="employee" id="employee" class="cus-select col" placeholder="Job types">
-                            <option value="carnivora">Carnivora</option>
-                        </select>
+                        <p class="h4 mb-0 text-white my-auto">Sory By : </p>
+                        
                     </form>
                 </div>
             </div>

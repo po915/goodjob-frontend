@@ -1,6 +1,8 @@
 @extends('layout.dash')
 
 @section('style')
+<link rel="stylesheet" href="{{ asset('css/flags.css') }}">
+<link rel="stylesheet" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006288/BBBootstrap/choices.min.css?version=7.0.0">
 <style>
 
 </style>
@@ -29,6 +31,8 @@
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                 <a class="dropdown-item" href="#">Edit</a>
                                 <a class="dropdown-item" href="#">Delete</a>
+                                <a class="dropdown-item" href="#">Import</a>
+                                <a class="dropdown-item" href="#">Export</a>
                             </div>
                         </div>
                     </div>
@@ -663,21 +667,22 @@
                         <h3>Staff skills</h3>
                         <p>Enter all of the different skills your fieldworkers have. <br>
                             You can then assign these to individual fieldworkers in the staff member section.</p>
-                        <!-- <div class="form-group" style="width:200px">
-                            <label class="form-control-label" for="last-purchase">Last purchase order number</label>
-                            <input type="number" class="form-control" id="last-purchase" placeholder="Last purchase order number" />
-                        </div> -->
                         <form method="get">
-                            <select data-placeholder="Start typing a skill" name="tags[]" multiple class="chosen-select form-control">
-                                <option value="Engineering">Engineering</option>
-                                <option value="Carpentry">Carpentry</option>
-                                <option value="Plumbing">Plumbing</option>
-                                <option value="Electical">Electrical</option>
-                                <option value="Mechanical">Mechanical</option>
-                                <option value="HVAC">HVAC</option>
+                            <select id="choices-multiple-remove-button" placeholder="Staff Skills" multiple>
+                                <option value="Author" onclick="filterSelection('Author')">React</option>
+                                <option value="MSelect">Vue</option>
+                                <option value="Accordions">Angular</option>
+                                <option value="Radio Buttons">Animate.js</option>
+                                <option value="SearchBox">Next.js</option>
+                                <option value="Tables">Three.js</option>
+                                <option value="Profiles">Laravel</option>
+                                <option value="Profiles">React Native</option>
+                                <option value="Profiles">Ionic</option>
+                                <option value="Profiles">Kotlin</option>
+                                <option value="Profiles">Swift</option>
                             </select>
                         </form>
-                        <button class="btn-9">Save</button>
+                        <button class="btn-9 mt-3">Save</button>
                     </div>
 
                     <!-- 8th Tab -->
@@ -1068,8 +1073,17 @@
 
 
 @section('script')
+<script src="{{ asset('js/chosen.js') }}"></script>
+<script src="{{ asset('js/jquery.flagstrap.min.js') }}"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006273/BBBootstrap/choices.min.js?version=7.0.0"></script>
 <script>
     $(document).ready(function() {
+        var multipleCancelButton = new Choices("#choices-multiple-remove-button", {
+            removeItemButton: true,
+            // maxItemCount: 3,
+            searchResultLimit: 5,
+            renderChoiceLimit: 5,
+        });
         $(".chosen-select").chosen({width : "300px"});
         $(".branding .dz-message span").html("<p class='txt-15'>Add Logo</p><p>500px &#10005; 200px</p><p>PNG, JPG</p>");
         $('#country-select').flagStrap();

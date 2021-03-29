@@ -177,8 +177,6 @@
                                 <small class="status">Waiting </small>
                             </td>
                         </tr>
-                        
-                        
                     </tbody>
                 </table>
             </div>
@@ -209,13 +207,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-jobtitle">Job title</label>
-                                        <input type="text" id="input-jobtitle" class="form-control form-4"/>
+                                        <input type="text" id="input-jobtitle" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-customer">Customer</label>
-                                        <input type="text" id="input-customer" class="form-control form-4"/>
+                                        <input type="text" id="input-customer" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -223,13 +221,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-start-date">Start date</label>
-                                        <input type="date" id="input-start-date" class="form-control form-4"/>
+                                        <input type="date" id="input-start-date" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-end-date">End date</label>
-                                        <input type="date" id="input-end-date" class="form-control form-4"/>
+                                        <input type="date" id="input-end-date" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -239,13 +237,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-place">Place</label>
-                                            <input type="text" id="input-place" class="form-control form-4"/>
+                                            <input type="text" id="input-place" class="form-control "/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-zip-code">Zip Code</label>
-                                            <input type="text" id="input-zip-code" class="form-control form-4"/>
+                                            <input type="text" id="input-zip-code" class="form-control "/>
                                         </div>
                                     </div>
                                 </div>
@@ -253,13 +251,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-place">Place</label>
-                                            <input type="text" id="input-place" class="form-control form-4"/>
+                                            <input type="text" id="input-place" class="form-control "/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-zip-code">Zip Code</label>
-                                            <input type="text" id="input-zip-code" class="form-control form-4"/>
+                                            <input type="text" id="input-zip-code" class="form-control "/>
                                         </div>
                                     </div>
                                 </div>
@@ -269,13 +267,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-phone-number">Phone number</label>
-                                        <input type="text" id="input-phone-number" class="form-control form-4"/>
+                                        <input type="text" id="input-phone-number" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-email">Email</label>
-                                        <input type="email" id="input-email" class="form-control form-4"/>
+                                        <input type="email" id="input-email" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -284,13 +282,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-contact-person">Contact person</label>
-                                        <input type="text" id="input-contact-person" class="form-control form-4"/>
+                                        <input type="text" id="input-contact-person" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-assigned-employee">Assigned Employees</label>
-                                        <input type="email" id="input-assigned-employee" class="form-control form-4"/>
+                                        <input type="email" id="input-assigned-employee" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -438,13 +436,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="job-name-1">Job name</label>
-                                        <input type="text" id="job-name-1" class="form-control form-4"/>
+                                        <input type="text" id="job-name-1" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="job-name-2">Job name</label>
-                                        <input type="text" id="job-name-2" class="form-control form-4"/>
+                                        <input type="text" id="job-name-2" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -452,13 +450,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="start-date">Start date</label>
-                                        <input type="date" id="start-date" class="form-control form-4"/>
+                                        <input type="date" id="start-date" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="end-date">End date</label>
-                                        <input type="date" id="end-date" class="form-control form-4"/>
+                                        <input type="date" id="end-date" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -468,13 +466,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="street">Street</label>
-                                            <input type="text" id="street" class="form-control form-4"/>
+                                            <input type="text" id="street" class="form-control "/>
                                         </div>
                                     </div>
                                     <div class="col-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="number">Number</label>
-                                            <input type="text" id="number" class="form-control form-4"/>
+                                            <input type="text" id="number" class="form-control "/>
                                         </div>
                                     </div>
                                 </div>
@@ -482,13 +480,13 @@
                                     <div class="col-8 pl-0 pr-2">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-place">Place</label>
-                                            <input type="text" id="input-place" class="form-control form-4"/>
+                                            <input type="text" id="input-place" class="form-control "/>
                                         </div>
                                     </div>
                                     <div class="col-4 px-0">
                                         <div class="form-group">
                                             <label class="form-control-label label-1" for="input-zip-code">Zip Code</label>
-                                            <input type="text" id="input-zip-code" class="form-control form-4"/>
+                                            <input type="text" id="input-zip-code" class="form-control "/>
                                         </div>
                                     </div>
                                 </div>
@@ -498,13 +496,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-phone-number">Phone number</label>
-                                        <input type="text" id="input-phone-number" class="form-control form-4"/>
+                                        <input type="text" id="input-phone-number" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-email">Email</label>
-                                        <input type="email" id="input-email" class="form-control form-4"/>
+                                        <input type="email" id="input-email" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -513,13 +511,13 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-contact-person">Contact person</label>
-                                        <input type="text" id="input-contact-person" class="form-control form-4"/>
+                                        <input type="text" id="input-contact-person" class="form-control "/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label label-1" for="input-assigned-employee">Assigned Employees</label>
-                                        <input type="email" id="input-assigned-employee" class="form-control form-4"/>
+                                        <input type="email" id="input-assigned-employee" class="form-control "/>
                                     </div>
                                 </div>
                             </div>
@@ -684,6 +682,8 @@
 
 
 @section('script')
+
+<script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
 <script>
     $(".pay-img").on("click", function() {
         // $.ajax({

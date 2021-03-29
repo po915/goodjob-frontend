@@ -20,6 +20,8 @@
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                 <a class="dropdown-item" href="#">Edit</a>
                                 <a class="dropdown-item" href="#">Delete</a>
+                                <a class="dropdown-item" href="#">Import</a>
+                                <a class="dropdown-item" href="#">Export</a>
                             </div>
                         </div>
                     </div>
@@ -146,12 +148,12 @@
                                         <img alt="avatar" src="{{ asset('image/user-avatar.jpg') }}" />
                                     </a>
                                     <div class="media-body">
-                                        <span class="name mb-0 text-sm">Jane Snow</span>
+                                        <span class="name mb-0 text-sm">Aane Snow</span>
                                     </div>
                                 </div>
                             </td>
                             <td class="team">
-                                Global, international Team
+                                Alobal, international Team
                             </td>
                             <td class="phone">
                                 +123 089 293 9821                                
@@ -176,12 +178,12 @@
                                         <img alt="avatar" src="{{ asset('image/user-avatar.jpg') }}" />
                                     </a>
                                     <div class="media-body">
-                                        <span class="name mb-0 text-sm">Jane Snow</span>
+                                        <span class="name mb-0 text-sm">Bane Snow</span>
                                     </div>
                                 </div>
                             </td>
                             <td class="team">
-                                Global, international Team
+                                Clobal, international Team
                             </td>
                             <td class="phone">
                                 +123 089 293 9821                                
@@ -208,6 +210,7 @@
 
 
 @section('script')
+<script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
 <script>
     $(".pay-img").on("click", function() {
         // $.ajax({

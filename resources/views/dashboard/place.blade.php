@@ -1,5 +1,9 @@
 @extends('layout.dash')
 
+@section('style')
+<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+@endsection
+
 @section('content')
     <!-- Header -->
     <div class="header">
@@ -201,6 +205,8 @@
 
 
 @section('script')
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 <script>
     $(".distance-card").on("click", function() {
         var job_id = $(this).attr('job-id');

@@ -273,6 +273,7 @@
 
 
 @section('script')
+<script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
 <script>
     $(".pay-img").on("click", function() {
         // $.ajax({

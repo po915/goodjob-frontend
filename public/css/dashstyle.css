@@ -242,6 +242,9 @@ body {
     background-color: #0F2231;
     color: #fff;
 }
+.btn-12 {
+    padding: 0.2rem 1rem 0.2rem 1rem;
+}
 /**************************************************************** BackgroundColor ******************/
 .bg-pending {
     background-color: #F2CB05;
@@ -342,6 +345,10 @@ body {
     max-width: 500px;
     justify-content: space-between;
 }
+.box-10 {
+    background-color: #F2F3F4;
+    border-radius: 5px;
+}
 /**************************************************************** Map ******************/
 .map-1 { 
     /* Map container */
@@ -394,11 +401,8 @@ body {
 /**************************************************************** Map End ******************/
 
  /***************** Custom Select Box & form */
- .form-1 {
-    width: fit-content;
-    height: auto;
-}
-.form-1 .cus-select-wrapper {
+
+.cus-select-wrapper {
     width: fit-content;
     min-width: 150px;
     -moz-user-select: none;
@@ -406,14 +410,14 @@ body {
     user-select: none;
     height: 32px;
 }
-.form-1 .cus-select-wrapper select {
+.cus-select-wrapper select {
     display: none;
 }
-.form-1 .cus-select {
+.cus-select {
     position: relative;
     margin: 0 0.5rem 0 0;
 }
-.form-1 .cus-select-trigger {
+.cus-select-trigger {
     position: relative;
     display: block;
     cursor: pointer;
@@ -429,12 +433,12 @@ body {
     border-radius: 25px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
 }
-.form-1 .cus-select-trigger:hover {
+.cus-select-trigger:hover {
     background: #0f2231;
     color: #fff;
 }
 
-.form-1 .cus-select-trigger:after {
+.cus-select-trigger:after {
     position: absolute;
     display: block;
     content: "";
@@ -449,11 +453,11 @@ body {
     transition: all 0.3s ease-in-out;
     transform-origin: 50% 0;
 }
-.form-1 .cus-select.opened .cus-select-trigger::after {
+.cus-select.opened .cus-select-trigger::after {
     margin-top: 3px;
     transform: rotate(-135deg) translateY(-50%);
 }
-.form-1 .custom-options {
+.custom-options {
     position: absolute;
     display: block;
     top: 100%;
@@ -474,13 +478,13 @@ body {
     transition: all 0.2s ease-in-out;
     transform: translateY(-1rem);
 }
-.form-1 .cus-select.opened .custom-options {
+.cus-select.opened .custom-options {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
     transform: translateY(0);
 }
-.form-1 .custom-options::before {
+.custom-options::before {
     position: absolute;
     display: block;
     content: "";
@@ -492,10 +496,10 @@ body {
     background: #ffffff;
     transform: rotate(45deg);
 }
-.form-1 .option-hover::before {
+.option-hover::before {
     background: #5b687b;
 }
-.form-1 .custom-option {
+.custom-option {
     position: relative;
     display: block;
     padding: 0.3rem 1rem;
@@ -505,7 +509,7 @@ body {
     color: #252a32;
     cursor: pointer;
 }
-.form-1 .custom-option:hover {
+.custom-option:hover {
     background: #5b687b;
     color: #ffffff;
 }
@@ -1290,4 +1294,23 @@ li.date_picker_week_day {
 }
 .profile-avatar-edit {
     right: 0px !important;
+}
+.choices__input {
+    margin-bottom: 0px;
+    padding: 4px 0px 4px 13px;
+}
+.choices__inner {
+    border-radius: 30px !important;
+}
+.choices__list--multiple .choices__item {
+    background-color: #0F2231 !important;
+    border: none !important;
+}
+.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
+    border-left: 1px solid #fff !important;
+}
+.reminder-select-1 .cus-select-trigger {
+    width: 120px;
+    border-radius: 5px !important;
+    border: none;
 }

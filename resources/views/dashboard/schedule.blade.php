@@ -1,6 +1,7 @@
 @extends('layout.dash')
 
 @section('style')
+<link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar5.1/main.css') }}">
 <style>
 
 </style>
@@ -108,26 +109,25 @@
 
 
 @section('script')
+<script src="{{ asset('assets/vendor/fullcalendar5.1/main.min.js') }}"></script>
 <script>
+$(".card-4 .card-body").on("click", function() {
+    var job_id = $(this).attr('job-id');
+    $("#card-4-"+job_id).slideToggle("slow");
+});
 
-
-    $(".card-4 .card-body").on("click", function() {
-        var job_id = $(this).attr('job-id');
-        $("#card-4-"+job_id).slideToggle("slow");
-    });
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains("show")) {
-                    openDropdown.classList.remove("show");
-                }
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
             }
         }
-    };  
+    }
+};  
 </script>
 @endsection

@@ -76,3 +76,11 @@ Route::any('/setting', function () {
 Route::any('/profile', function () {
     return view('dashboard/profile');
 });
+
+Route::any('/reminder', function () {
+    return view('dashboard/reminder');
+});
+
+Route::any('/add-reminder', function () {
+    return view('dashboard/addreminder');
+});

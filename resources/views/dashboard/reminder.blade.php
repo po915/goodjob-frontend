@@ -60,13 +60,69 @@
                     <button type="button" class="btn btn-12 ml-3" id="add-reminder"><i class="fa fa-plus"></i> ADD REMINDER</button>
                 </div>
             </div>
+
+            <div class="table-responsive" data-toggle="checklist" data-list-values='["name", "address", "phone"]'>
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="table-check-all" type="checkbox"  onclick="toggle(this)"> 
+                                    <label class="custom-control-label" for="table-check-all"></label>
+                                </div>
+                            </th>
+                            <th scope="col" class="sort" data-sort="name">Reminder Name</th>
+                            <th scope="col" class="sort" data-sort="type">Reminder Type</th>
+                            <th scope="col" class="sort" data-sort="customer">Customer</th>
+                            <th scope="col">Reminder Date&Time</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        <tr>
+                            <td>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input class="custom-control-input checklist-entry" id="customCheck1" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                                <!-- <input type="checkbox"> -->
+                            </td>
+                            <td class="name">
+                                Reminder name
+                            </td>
+                            <td class="type">
+                                Reminder Type
+                            </td>
+                            <td class="customer">
+                                Customer                               
+                            </td>
+                            <td class="time">
+                                MM-DD-YYYY hh:mm
+                            </td>
+                            <td>
+                                Pending
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
 @endsection
 
 
 @section('script')
+<script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
 <script>
+function toggle(source) {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] != source)
+        checkboxes[i].checked = source.checked;
+    }
+}
 $("#add-reminder").on("click", function() {
     window.location.href = "/add-reminder";
 })

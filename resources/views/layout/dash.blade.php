@@ -202,7 +202,7 @@
         <!-- <script src="{{ asset('assets/vendor/moment/min/moment.min.js') }}"></script> -->
         <!-- <script src="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script> -->
         <!-- <script src="{{ asset('assets/vendor/select2/dist/js/select2.min.js') }}"></script> -->
-        <!-- <script src="{{ asset('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script> -->
+        <script src="{{ asset('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
         <!-- <script src="{{ asset('assets/vendor/nouislider/distribute/nouislider.min.js') }}"></script> -->
         <!-- <script src="{{ asset('assets/vendor/quill/dist/quill.min.js') }}"></script> -->
         <script src="{{ asset('assets/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>

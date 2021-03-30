@@ -660,13 +660,11 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
                             <div class="flex">
                                 <button class="update-job px-3 py-2 btn-5">Save</button>
                                 <button class="px-3 py-2 btn-5" data-dismiss="modal">Cancel</button>
                             </div>
-                            
-
                         </div>
                     </form>
                 </div>

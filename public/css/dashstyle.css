@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: 'Abel-Regular';
     src: url('../font/Abel-Regular.ttf') format('truetype');
-}
+} */
 @font-face {
     font-family: 'Railway';
     src: url('../font/Raleway-Regular.ttf') format('truetype');
@@ -57,7 +57,7 @@ body {
 .card-5 {
     background-color: #f2f3f4;
     width: 70%;
-    max-width: 660px;
+    max-width: 765px;
     box-shadow: none;
     margin-bottom: 10px;
 }
@@ -72,6 +72,26 @@ body {
 .card-sub-distance {
     padding: 1px 0px;
     display: none;
+}
+.card-7 {
+    width: 300px;
+    height: 70px;
+    background-color: #0D1E2B;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.card-7 p {
+    color: #fff;
+    margin-left: 20px;
+}
+.card-7 .btn {
+    background-color: #0F2231;
+}
+.card-7 .btn:hover {
+    background-color: #f2f3f4;
+    color: #0D1E2B;
 }
 /**************************************************************** Txt ******************/
 .txt-dark {
@@ -98,7 +118,7 @@ body {
 .txt-11:hover {
     opacity: 0.9;
 }
-.txt-12::after {
+/* .txt-12::after {
     top: 2.5rem;
     content: "";
     position: absolute;
@@ -107,7 +127,7 @@ body {
     height: 3px;
     background: #F2CB05;
     bottom: 0;
-}
+} */
 .txt-13 {
     font-size: 0.9rem;
     font-weight: 600;
@@ -245,6 +265,18 @@ body {
 .btn-12 {
     padding: 0.2rem 1rem 0.2rem 1rem;
 }
+.btn-14 {
+    border: none;
+    background-color: #0B1B29;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 20px 10px 0px 240px;
+}
+.btn-14:hover {
+    background-color: #f2f3f4;
+    color: #0F2231;
+}
 /**************************************************************** BackgroundColor ******************/
 .bg-pending {
     background-color: #F2CB05;
@@ -348,6 +380,13 @@ body {
 .box-10 {
     background-color: #F2F3F4;
     border-radius: 5px;
+}
+.box-11 {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 0.5px solid #ececec;
+    max-width: 500px;
+    justify-content: space-between;
 }
 /**************************************************************** Map ******************/
 .map-1 { 
@@ -1006,6 +1045,7 @@ li.date_picker_week_day {
     padding: 20px 5px;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 2rem;
 }
 .cus-nav .nav-link {
     font-weight: 800;
@@ -1300,7 +1340,7 @@ li.date_picker_week_day {
     padding: 4px 0px 4px 13px;
 }
 .choices__inner {
-    border-radius: 30px !important;
+    border-radius: 5px !important;
 }
 .choices__list--multiple .choices__item {
     background-color: #0F2231 !important;
@@ -1316,4 +1356,51 @@ li.date_picker_week_day {
 }
 #description {
     height: 147px;
+}
+.close {
+    font-size: 35px;
+}
+.fog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    opacity: 0.3;
+    background-color: #000;
+    display: none;
+}
+.blur {
+    filter: blur(5px);
+}
+.side-menu {
+    position: fixed;
+    z-index: 1000000;
+    right: -350px;
+    top: 0;
+    bottom: 0;
+    width: 350px;
+    background-color: #0F2231;
+    transition: 0.5s ease-in-out;
+}
+.side-menu.show {
+    right: 0;
+}
+.side-menu h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 10vh;
+}
+#add-description {
+    height: 148px;
+    resize: none;
+}
+
+.form-control:focus {
+    color: #8898aa;
+    border-color: #0F2231;
+    outline: 0;
+    background-color: #fff;
+    box-shadow: 0 3px 9px rgb(50 50 9 / 0%), 3px 4px 8px rgb(94 114 228 / 10%);
 }

@@ -73,103 +73,143 @@
 @endsection('style')
 
 @section('content')
-    <!-- Header -->
-    <div class="header">
-        <div class="container-fluid">
-            <div class="header-body">
-                <div class="row align-items-center py-4">
-                    <div class="col-lg-6 col-7">
-                        <!-- <h6 class="h1 text-white d-inline-block mb-0 txt-dark">Calendar</h6> -->
-                        <h1 class="d-inline-block mb-0 txt-dark my-auto txt-12">Calendar</h1>
-                        &nbsp;&nbsp;&nbsp;
-                        <a href="/schedule" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Scheduling</a>
-                        <p>These are your appointments today.</p>
-                    </div>
-                    <div class="col-lg-6 col-5 text-right">
-                        <button type="button" class="btn btn-twitter btn-icon-only rounded-circle">
-                            <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
-                        </button>
-                        <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light bg-white shadow" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-ellipsis-v"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Delete</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Page content -->
+<!-- Header -->
+<div class="header">
     <div class="container-fluid">
-
-        <div class="card">
-            <div class="card-header border-0">
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-icon-only rounded-circle btn-4 calendar-btn-prev">
-                            <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
-                        </button>
-                        <h6 class="d-inline-block mb-0 txt-10 calendar-title">MM-DD-YYYY</h6>
-                        <button type="button" class="btn btn-icon-only rounded-circle btn-4 calendar-btn-next">
-                            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
-                        </button>
-                    </div>
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <!-- <h6 class="h1 text-white d-inline-block mb-0 txt-dark">Calendar</h6> -->
+                    <h1 class="d-inline-block mb-0 txt-dark my-auto txt-12">Calendar</h1>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="/schedule" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Scheduling</a>
+                    <p>These are your appointments today.</p>
                 </div>
-            </div>
-            <div class="card-body container-fluid pt-0">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                        <div class="f-calendar on-scrollbar" id="f-calendar"></div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="form-group">
-                            <div class="input-group input-group-merge">
-                                <div class="input-group-prepend form-5-prepend">
-                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
-                                </div>
-                                <input class="form-control text-center form-5" placeholder="SEARCH FOR AN APPOINTMENT" type="text">
-                            </div>
-
-                            <div>
-                                <section class="date_picker_wrapper" id="date_picker_1">
-                                    <div class="date_picker_header">
-                                        <button class="date_picker_year"></button>
-                                        <h3 class="date_picker_month_day"></h3>
-                                    </div>
-                                    <div class="date_picker_body">
-                                        <div class="date_picker_month_navigation">
-                                            <button type="button" class="btn bg-base btn-icon-only rounded-circle date_picker_prev_month date_picker_month_nav_btn">
-                                                <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
-                                            </button>
-                                            <h2 class="date_picker_month_name"></h2>
-                                            <button class="btn bg-base btn-icon-only rounded-circle date_picker_next_month date_picker_month_nav_btn">
-                                                <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
-                                            </button>
-                                        </div>
-                                        <ul class="date_picker_month_days">
-                                            <li>S</li>
-                                            <li>M</li>
-                                            <li>T</li>
-                                            <li>W</li>
-                                            <li>T</li>
-                                            <li>F</li>
-                                            <li>S</li>
-                                        </ul>
-                                    </div>
-                                </section>
-                            </div>
+                <div class="col-lg-6 col-5 text-right">
+                    <button type="button" class="btn btn-twitter btn-icon-only rounded-circle">
+                        <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light bg-white shadow" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                            <a class="dropdown-item" href="#">Edit</a>
+                            <a class="dropdown-item" href="#">Delete</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid">
 
-    
+    <div class="card">
+        <div class="card-header border-0">
+            <div class="row">
+                <button type="button" class="btn btn-icon-only rounded-circle btn-4 calendar-btn-prev ml-3">
+                    <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
+                </button>
+                <h6 class="d-inline-block mb-0 txt-10 calendar-title my-auto">MM-DD-YYYY</h6>
+                <button type="button" class="btn btn-icon-only rounded-circle btn-4 calendar-btn-next">
+                    <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+                </button>
+                <button type="button" class="btn btn-12 mr-auto ml-3" id="add-event" data-toggle="modal" data-target="#addEvent"><i class="fa fa-plus"></i> ADD </button>
+            </div>
+        </div>
+        <div class="card-body container-fluid pt-0">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="f-calendar on-scrollbar" id="f-calendar"></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group input-group-merge">
+                            <div class="input-group-prepend form-5-prepend">
+                                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            </div>
+                            <input class="form-control text-center form-5" placeholder="SEARCH FOR AN APPOINTMENT" type="text">
+                        </div>
+
+                        <div>
+                            <section class="date_picker_wrapper" id="date_picker_1">
+                                <div class="date_picker_header">
+                                    <button class="date_picker_year"></button>
+                                    <h3 class="date_picker_month_day"></h3>
+                                </div>
+                                <div class="date_picker_body">
+                                    <div class="date_picker_month_navigation">
+                                        <button type="button" class="btn bg-base btn-icon-only rounded-circle date_picker_prev_month date_picker_month_nav_btn">
+                                            <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
+                                        </button>
+                                        <h2 class="date_picker_month_name"></h2>
+                                        <button class="btn bg-base btn-icon-only rounded-circle date_picker_next_month date_picker_month_nav_btn">
+                                            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+                                        </button>
+                                    </div>
+                                    <ul class="date_picker_month_days">
+                                        <li>S</li>
+                                        <li>M</li>
+                                        <li>T</li>
+                                        <li>W</li>
+                                        <li>T</li>
+                                        <li>F</li>
+                                        <li>S</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addEvent">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">ADD</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body container">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="form-control-label" for="add-jobname">Job name</label>
+                        <input type="text" class="form-control" id="add-jobname" placeholder="Add name" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row input-daterange datepicker align-items-center">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label label-1">Start date</label>
+                                <input class="form-control" placeholder="Start date" type="text" value="04/1/2021">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label label-1">End date</label>
+                                <input class="form-control" placeholder="End date" type="text" value="04/12/2021">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 @endsection
 
@@ -177,28 +217,13 @@
 @section('script')
 <script src="{{ asset('assets/vendor/fullcalendar5.1/main.min.js') }}"></script>
 <script>
-        var today = new Date();
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-        var yyyy = today.getFullYear();
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
 
-        today = mm + '' + dd + '/' + yyyy;
-        var choosedDate = yyyy + '-' + mm + '-' + dd;
-    $(".pay-img").on("click", function() {
-        // $.ajax({
-        //     url: '/sign-up',
-        //     method: 'post',
-        //     data: {
-
-        //     },
-        //     dataType: false,
-        //     success: function(data) {
-        //         alert(data)
-        //     }
-        // });
-        window.location.href = "/search";
-    });
-
+    today = mm + '' + dd + '/' + yyyy;
+    var choosedDate = yyyy + '-' + mm + '-' + dd;
 
     $(".calendar-btn-next").on("click", function() {
         $(".fc-next-button").click();

@@ -18,7 +18,7 @@
                             <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
                         </button>
                         <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light bg-white shadow" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="btn btn-sm btn-icon-only text-light bg-white shadow 3dots">
                                 <i class="fa fa-ellipsis-v"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -34,7 +34,7 @@
         </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid">
+    <div class="container-fluid page-content">
 
         <div class="card">
             <div class="card-header border-0">
@@ -246,29 +246,81 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="">
-                        <h3>Activities</h3>
-                        <div class="card col-lg-8">
-                            <!-- Card body -->
-                            <div class="card-body px-2 py-2">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <!-- Avatar -->
-                                        <a href="#" class="avatar avatar-xl rounded-circle">
-                                            <img alt="Image placeholder" src="../../assets/img/theme/team-2.jpg" />
-                                        </a>
+                    <h3>Activities</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body px-2 py-2">
+                                    <div class="row align-items-center">
+                                        <div class="col ml-2">
+                                            <p class="text-sm text-muted mb-0">08.09.20, 12:23 Uhr</p>
+                                            <h4 class="mb-0">Lorem ipsum</h4>
+                                        </div>
                                     </div>
-                                    <div class="col ml--2">
-                                        <p class="text-sm text-muted mb-0">08.09.20, 12:23 Uhr</p>
-                                        <h4 class="mb-0">Lorem ipsum</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body px-2 py-2">
+                                    <div class="row align-items-center">
+                                        <div class="col ml-2">
+                                            <p class="text-sm text-muted mb-0">08.09.20, 12:23 Uhr</p>
+                                            <h4 class="mb-0">Lorem ipsum</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body px-2 py-2">
+                                    <div class="row align-items-center">
+                                        <div class="col ml-2">
+                                            <p class="text-sm text-muted mb-0">08.09.20, 12:23 Uhr</p>
+                                            <h4 class="mb-0">Lorem ipsum</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-6">
+                            <div class="flex mb-2">
+                                <label class="custom-toggle my-auto">
+                                    <input type="checkbox" checked>
+                                    <span class="custom-toggle-slider rounded-circle"></span>
+                                </label>
+                                <p class="my-auto ml-3">User is active</p>
+                            </div>
+                            <div class="flex mb-2">
+                                <label class="custom-toggle my-auto">
+                                    <input type="checkbox">
+                                    <span class="custom-toggle-slider rounded-circle"></span>
+                                </label>
+                                <p class="my-auto ml-3">Blocked</p>
+                            </div>
+                            <div class="flex mb-2">
+                                <label class="custom-toggle my-auto">
+                                    <input type="checkbox">
+                                    <span class="custom-toggle-slider rounded-circle"></span>
+                                </label>
+                                <p class="my-auto ml-3">New password</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-lg-6">
+                            <div class="box-11">
+                                <p>Last Login:</p>
+                                <p class="txt-20">23.09.2020, 11:21 AM</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="box-11">
+                                <p>Registered Since:</p>
+                                <p class="txt-20">12.07.2020</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="flex">
+                    <div class="flex mt-3">
                         <button class="update-job px-3 py-2 btn-5">Save</button>
                         <button class="px-3 py-2 btn-5" data-dismiss="modal">Cancel</button>
                     </div>
@@ -276,6 +328,30 @@
             </div>
 
         </div>
+    </div>
+</div>
+
+
+<div class="side-menu">
+    <button class="btn-14"><i class="fa fa-times"></i> Close</button>
+    <h1>What exactly <br> do you want to do?</h1>
+    <div class="card-7 mx-auto mt-4">
+        <p class="my-auto">Search for Employees</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto">
+        <p class="my-auto">Export employees</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto">
+        <p class="my-auto">Import employees</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
     </div>
 </div>
 

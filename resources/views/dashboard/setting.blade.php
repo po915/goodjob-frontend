@@ -650,6 +650,60 @@
                             </div>
                             <button class="btn-10 my-auto"><i class="fa fa-plus"></i> ADD TEAM</button>    
                         </div>
+                        <div class="table-responsive" data-toggle="list" data-list-values='["name", "budget", "status", "completion"]'>
+                            <table class="table align-items-center table-flush">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col" class="sort" data-sort="name">Name</th>
+                                        <th scope="col" class="sort" data-sort="budget">Role</th>
+                                        <th scope="col" class="sort asc" data-sort="status">Contact</th>
+                                        <th scope="col" class="sort" data-sort="completion">Teams</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list">
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="media align-items-center">
+                                                <a href="#" class="avatar rounded-circle mr-3">
+                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-3.jpg" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <span class="name mb-0 text-sm">Jane Snow</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="budget">
+                                            Office Manager
+                                        </td>
+                                        <td>
+                                            www@www.com
+                                        </td>
+                                        <td class="text-right">                    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="media align-items-center">
+                                                <a href="#" class="avatar rounded-circle mr-3">
+                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-3.jpg" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <span class="name mb-0 text-sm">Jane Snow</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="budget">
+                                            Office Manager
+                                        </td>
+                                        <td>
+                                            www@www.com
+                                        </td>
+                                        <td class="text-right">                    
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                     <!-- 6th Tab -->
@@ -746,7 +800,7 @@
                     </div>
 
                     <!-- 9th Tab -->
-                    <div class="tab-pane fade container-fluid pt-5" id="v-pills-nine" role="nine" aria-labelledby="v-pills-nine-tab">
+                    <div class="tab-pane fade container-fluid py-5" id="v-pills-nine" role="nine" aria-labelledby="v-pills-nine-tab">
                         <h3>SALES</h3>
                         <div class="card card-6">
                             <div class="card-body">
@@ -977,7 +1031,7 @@
                     </div>
 
                     <!-- 13th tab -->
-                    <div class="tab-pane fade container-fluid pt-5" id="v-pills-thirteen" role="thirteen" aria-labelledby="v-pills-thirteen-tab">
+                    <div class="tab-pane fade container-fluid py-5" id="v-pills-thirteen" role="thirteen" aria-labelledby="v-pills-thirteen-tab">
                         <h3>REPORTS</h3>
                         <div class="form-group" style="width:200px">
                             <label class="form-control-label" for="auto-message-to">Send customer auto messages to</label>

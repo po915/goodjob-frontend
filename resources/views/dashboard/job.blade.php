@@ -1,191 +1,294 @@
 @extends('layout.dash')
 
 @section('content')
-    <!-- Header -->
-    <div class="header">
-        <div class="container-fluid">
-            <div class="header-body">
-                <div class="row align-items-center py-4">
-                    <div class="col-lg-6 col-7">
-                        <h1 class="h2 d-inline-block mb-0 txt-dark">John Snow's Jobs</h6>
-                        <p>These are your current jobs.</p>
-                    </div>
-                    <div class="col-lg-6 col-5 text-right">
-                        <button type="button" class="btn btn-twitter btn-icon-only rounded-circle">
-                            <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
-                        </button>
-                        <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light bg-white shadow" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-ellipsis-v"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Delete</a>
-                            </div>
-                        </div>
+<!-- Header -->
+<div class="header">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <h1 class="h2 d-inline-block mb-0 txt-dark">John Snow's Jobs</h6>
+                    <p>These are your current jobs.</p>
+                </div>
+                <div class="col-lg-6 col-5 text-right">
+                    <button type="button" class="btn btn-twitter btn-icon-only rounded-circle" data-toggle="modal" data-target="#jobCreate">
+                        <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light bg-white shadow 3dots">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Page content -->
-    <div class="container-fluid">
-        <div class="card mb-0">
-            <div class="card-header border-0">
-                <div class="row">
-                    <div class="row row-1">
-                        <div class="col-auto">
-                            <button type="button" class="btn btn-icon-only rounded-circle btn-4">
-                                <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
-                            </button>
-                            <h6 class="d-inline-block mb-0 txt-10">March, 2021</h6>
-                            <button type="button" class="btn btn-icon-only rounded-circle btn-4">
-                                <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
-                            </button>
-                        </div>
-                        <!-- <div class="col-auto">
-                            <form>
-                                <div class="bootstrap-tagsinput">
-                                    <span class="tag badge badge-primary">Bucharest<span data-role="remove"></span></span> <span class="tag badge badge-primary"> Cluj<span data-role="remove"></span></span>
-                                    <span class="tag badge badge-primary"> Iasi<span data-role="remove"></span></span> <span class="tag badge badge-primary"> Timisoara<span data-role="remove"></span></span>
-                                    <span class="tag badge badge-primary"> Piatra Neamt<span data-role="remove"></span></span> <input type="text" placeholder="" />
-                                </div>
-                                <input type="text" class="form-control" value="View: Today, Support: Jane Snow" data-toggle="tags" style="display: none;" />
-                            </form>
-                        </div> -->
-                        <div class="col-auto">
-                            <form class="form-1 row-1 row">
-                                <select name="period" id="period" class="cus-select col" placeholder="Period">
-                                    <option value="tiger">Tiger</option>
-                                    <option value="lion">Lion</option>
-                                    <option value="elephant">Elephant</option>
-                                </select>
-                                <select name="status" id="status" class="cus-select col" placeholder="Status">
-                                    <option value="carnivora">Carnivora</option>
-                                    <option value="herbivora">Herbivora</option>
-                                    <option value="omnivora">Omnivora</option>
-                                </select>
-                                <select name="customer" id="customer" class="cus-select col" placeholder="Customer">
-                                    <option value="carnivora">Carnivora</option>
-                                    <option value="herbivora">Herbivora</option>
-                                    <option value="omnivora">Omnivora</option>
-                                </select>
-                                <select name="level" id="level" class="cus-select col" placeholder="Support Level">
-                                    <option value="carnivora">Lorem</option>
-                                    <option value="herbivora">Ipsum</option>
-                                    <option value="omnivora">Dolor</option>
-                                </select>
-                            </form>
-                        </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid page-content">
+    <div class="card mb-0">
+        <div class="card-header border-0">
+            <div class="row">
+                <div class="row row-1">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-icon-only rounded-circle btn-4">
+                            <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
+                        </button>
+                        <h6 class="d-inline-block mb-0 txt-10">March, 2021</h6>
+                        <button type="button" class="btn btn-icon-only rounded-circle btn-4">
+                            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                    <div class="col-auto">
+                        <form class="form-1 row-1 row">
+                            <select name="period" id="period" class="cus-select col" placeholder="Period">
+                                <option value="tiger">Tiger</option>
+                                <option value="lion">Lion</option>
+                                <option value="elephant">Elephant</option>
+                            </select>
+                            <select name="status" id="status" class="cus-select col" placeholder="Status">
+                                <option value="carnivora">Carnivora</option>
+                                <option value="herbivora">Herbivora</option>
+                                <option value="omnivora">Omnivora</option>
+                            </select>
+                            <select name="customer" id="customer" class="cus-select col" placeholder="Customer">
+                                <option value="carnivora">Carnivora</option>
+                                <option value="herbivora">Herbivora</option>
+                                <option value="omnivora">Omnivora</option>
+                            </select>
+                            <select name="level" id="level" class="cus-select col" placeholder="Support Level">
+                                <option value="carnivora">Lorem</option>
+                                <option value="herbivora">Ipsum</option>
+                                <option value="omnivora">Dolor</option>
+                            </select>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- Light table -->
-            <div class="table-responsive" data-toggle="list" data-list-values='["name", "description", "time","place","reponsible","status"]'>
-                <table class="table align-items-center table-flush">
-                    <thead class="thead-light">
-                        <tr>
-                            <th class="px-2">
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" id="table-check-all" type="checkbox">
-                                    <label class="custom-control-label" for="table-check-all"></label>
+        </div>
+        <!-- Light table -->
+        <div class="table-responsive" data-toggle="list" data-list-values='["name", "description", "time","place","reponsible","status"]'>
+            <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                    <tr>
+                        <th class="px-2">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" id="table-check-all" type="checkbox">
+                                <label class="custom-control-label" for="table-check-all"></label>
+                            </div>
+                        </th>
+                        <th class="job-status-bar-th px-1"></th>
+                        <th scope="col" class="sort" data-sort="title">Title</th>
+                        <th scope="col" class="sort" data-sort="description">Description</th>
+                        <th scope="col" class="sort" data-sort="time">Time</th>
+                        <th scope="col" class="sort" data-sort="place">Place of Use</th>
+                        <th scope="col" class="sort" data-sort="reponsible">Responsible</th>
+                        <th scope="col" class="sort" data-sort="status">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="list">
+                    <tr data-toggle="modal" data-target="#jobEdit">
+                        <td class="px-2">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" id="table-check-all" type="checkbox">
+                                <label class="custom-control-label" for="table-check-all"></label>
+                            </div>
+                        </td>
+                        <td class="job-status-bar-pending px-0 mx-0"></td>
+                        <td scope="row">
+                            <div class="media align-items-center">
+                                <div class="media-body">
+                                    <span class="title mb-0 text-sm">Jane Snow</span>
                                 </div>
-                            </th>
-                            <th class="job-status-bar-th px-1"></th>
-                            <th scope="col" class="sort" data-sort="title">Title</th>
-                            <th scope="col" class="sort" data-sort="description">Description</th>
-                            <th scope="col" class="sort" data-sort="time">Time</th>
-                            <th scope="col" class="sort" data-sort="place">Place of Use</th>
-                            <th scope="col" class="sort" data-sort="reponsible">Responsible</th>
-                            <th scope="col" class="sort" data-sort="status">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody class="list">
-                        <tr data-toggle="modal" data-target="#jobEdit">
-                            <td class="px-2">
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" id="table-check-all" type="checkbox">
-                                    <label class="custom-control-label" for="table-check-all"></label>
+                            </div>
+                        </td>
+                        <td class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </td>
+                        <td class="time">
+                            13:00 - 15:00                               
+                        </td>
+                        <td class="place">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet
+                        </td>
+                        <td>
+                            <span class="text-pending">●</span>
+                            <small class="status">Pending </small>
+                        </td>
+                        <!-- <td class="text-right">
+                            <div class="dropdown">
+                                <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
                                 </div>
-                            </td>
-                            <td class="job-status-bar-pending px-0 mx-0"></td>
-                            <td scope="row">
-                                <div class="media align-items-center">
-                                    <div class="media-body">
-                                        <span class="title mb-0 text-sm">Jane Snow</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </td>
-                            <td class="time">
-                                13:00 - 15:00                               
-                            </td>
-                            <td class="place">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </td>
-                            <td>
-                                Lorem ipsum dolor sit amet
-                            </td>
-                            <td>
-                                <span class="text-pending">●</span>
-                                <small class="status">Pending </small>
-                            </td>
-                            <!-- <td class="text-right">
-                                <div class="dropdown">
-                                    <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-ellipsis-v"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                        <a class="dropdown-item" href="#">Edit</a>
-                                        <a class="dropdown-item" href="#">Delete</a>
-                                    </div>
-                                </div>
-                            </td> -->
-                        </tr>
+                            </div>
+                        </td> -->
+                    </tr>
 
-                        <tr data-toggle="modal" data-target="#jobUpdate">
-                            <td class="px-2">
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" id="table-check-all" type="checkbox">
-                                    <label class="custom-control-label" for="table-check-all"></label>
+                    <tr data-toggle="modal" data-target="#jobUpdate">
+                        <td class="px-2">
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" id="table-check-all" type="checkbox">
+                                <label class="custom-control-label" for="table-check-all"></label>
+                            </div>
+                        </td>
+                        <td class="job-status-bar-waiting px-0 mx-0"></td>
+                        <td scope="row">
+                            <div class="media align-items-center">
+                                <div class="media-body">
+                                    <span class="title mb-0 text-sm">Jane Snow</span>
                                 </div>
-                            </td>
-                            <td class="job-status-bar-waiting px-0 mx-0"></td>
-                            <td scope="row">
-                                <div class="media align-items-center">
-                                    <div class="media-body">
-                                        <span class="title mb-0 text-sm">Jane Snow</span>
+                            </div>
+                        </td>
+                        <td class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </td>
+                        <td class="time">
+                            13:00 - 15:00                               
+                        </td>
+                        <td class="place">
+                            Rorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet
+                        </td>
+                        <td>
+                            <span class="text-waiting">●</span>
+                            <small class="status">Waiting </small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="jobCreate">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="card mb-0">
+                <div class="card-header py-3">
+                    <div class="row align-items-center">
+                        <div class="box-3">
+                            <h2 class="mb-0">Create a new job</h2>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="avatar-upload ml-4">
+                        <div class="avatar-edit">
+                            <form action="" method="post" id="form-image">
+                                <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                <label for="imageUpload"></label>
+                            </form>
+                        </div>
+                        <div class="avatar-preview">
+                            <img class="profile-user-img img-responsive img-circle" id="imagePreview" src="http://localhost:8000/image/primary-avatar.jpg" alt="User profile picture">
+                        </div>
+                    </div>
+                    <form>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1" for="add-customer">Customer</label>
+                                        <input type="text" id="add-customer" class="form-control" pladeholder="Customer" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1" for="add-description">Job description</label>
+                                        <textarea class="form-control" id="add-description" rows="5"></textarea>
                                     </div>
                                 </div>
-                            </td>
-                            <td class="description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </td>
-                            <td class="time">
-                                13:00 - 15:00                               
-                            </td>
-                            <td class="place">
-                                Rorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </td>
-                            <td>
-                                Lorem ipsum dolor sit amet
-                            </td>
-                            <td>
-                                <span class="text-waiting">●</span>
-                                <small class="status">Waiting </small>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1" for="add-phone-1">Phone number 1</label>
+                                        <input type="text" id="add-phone-1" class="form-control" pladeholder="Phone number 1" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1" for="add-phone-2">Phone number 2</label>
+                                        <input type="text" id="add-phone-2" class="form-control" pladeholder="Phone number 2" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1" for="add-email">Email</label>
+                                        <input type="text" id="add-email" class="form-control" pladeholder="Email address" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="row input-daterange datepicker align-items-center">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="form-control-label label-1">Start date</label>
+                                                <input class="form-control" placeholder="Start date" type="text" value="04/1/2021">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="form-control-label label-1">End date</label>
+                                                <input class="form-control" placeholder="End date" type="text" value="04/12/2021">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1" for="add-contact-person">Contact person</label>
+                                        <input type="text" id="add-contact-person" class="form-control "/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                <label class="form-control-label label-1">Search responsible employees</label>
+                                    <div class="input-group input-group-merge">
+                                        <input class="form-control" placeholder="Assigned Employees" type="text">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1">Place of use</label>
+                                        <label class="custom-checkbox my-auto"><div>like company headquaters</div><input type="checkbox" id="warn-message"><span class="checkmark"></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label label-1" for="add-work-address">Working address</label>
+                                        <input type="text" id="add-work-address" class="form-control "/>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="edit-job px-3 py-2"> Add job</button>
+
+                        </div>
+                    </form>
+                </div>
             </div>
 
-
         </div>
+    </div>
+</div>
 
-
-        <div class="modal" id="jobEdit">
+<div class="modal" id="jobEdit">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="card">
@@ -674,7 +777,28 @@
     </div>
 </div>
 
-
+<div class="side-menu">
+    <button class="btn-14"><i class="fa fa-times"></i> Close</button>
+    <h1>What exactly <br> do you want to do?</h1>
+    <div class="card-7 mx-auto mt-4">
+        <p class="my-auto">Search for Employees</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto">
+        <p class="my-auto">Export employees</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto">
+        <p class="my-auto">Import employees</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+</div>
 
 @endsection
 

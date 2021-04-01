@@ -13,12 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/sign', function () {
     return view('sign');
+});
+
+Route::get('/', function () {
+    return view('register');
 });
 
 Route::any('/sign-up', function () {
     return view('choose_license');
+});
+
+Route::any('/plan', function () {
+    return view('plan');
 });
 
 Route::any('/pricing', function () {

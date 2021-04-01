@@ -35,6 +35,7 @@
 
 @endsection('style')
 @section('content')
+
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">
@@ -49,13 +50,9 @@
                             <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
                         </button>
                         <div class="dropdown">
-                            <a class="btn btn-sm btn-icon-only text-light bg-white shadow" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="btn btn-sm btn-icon-only text-light bg-white shadow 3dots" href="#">
                                 <i class="fa fa-ellipsis-v"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Delete</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +60,7 @@
         </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid">
+    <div class="container-fluid page-content">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card card-calendar">
@@ -251,6 +248,38 @@
 </div>
 
 
+
+<div class="side-menu">
+    <button class="btn-14"><i class="fa fa-times"></i> Close</button>
+    <h1>What exactly <br> do you want to do?</h1>
+    <div class="card-7 mx-auto mt-4">
+        <p class="my-auto">Small Introduction</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto">
+        <p class="my-auto">Be the first to register employees</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto">
+        <p class="my-auto">Rearrange the dashboard</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto">
+        <p class="my-auto">I need help</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+        </button>
+    </div>
+</div>
+
+
+
 @endsection
 
 
@@ -263,22 +292,6 @@
       async
     ></script>
 <script>
-    
-    $(".pay-img").on("click", function() {
-        // $.ajax({
-        //     url: '/sign-up',
-        //     method: 'post',
-        //     data: {
-
-        //     },
-        //     dataType: false,
-        //     success: function(data) {
-        //         alert(data)
-        //     }
-        // });
-        window.location.href = "/search";
-    })
-
     mapboxgl.accessToken = "pk.eyJ1IjoiY29tbWE5MTUiLCJhIjoiY2trajB6czdkMjluazJ3cGF1ampyeHMwbCJ9.MK9s2uQZxIaJMZiBCk3bjA";
 
     var geojson = {
@@ -297,16 +310,6 @@
             },
         ],
     };
-
-    // var selfposition = [
-    //     {
-    // type: 'Feature',
-    // geometry: {
-    //   type: 'Point',
-    //   coordinates: [-77.031952, 38.913184]
-    // }
-    // ]
-
     var map = new mapboxgl.Map({
         container: "map-1",
         style: "mapbox://styles/mapbox/streets-v9",
@@ -337,15 +340,9 @@
     });
     map.on('load', function() {
         var btn = document.getElementsByClassName('sidenav-toggler');
-        // console.log(btn);
         btn.onclick = function() {
             alert();
         }
-        // fixButton.onclick = function() {
-        //     // map.resize();
-        //     alert();
-        // }
-        
     });
     $(".sidenav-toggler").on("click", function() {
         // map.resize();
@@ -402,6 +399,9 @@
         calendar.render();
     });
 
+    $(".3dots").on("click", function () {
+
+    })
 
 </script>
 @endsection

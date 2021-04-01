@@ -1,188 +1,46 @@
-/* @font-face {
-    font-family: 'Abel-Regular';
-    src: url('../font/Abel-Regular.ttf') format('truetype');
-} */
-
-body {
-    /* font-family: 'Abel-Regular' !important; */
+.f-img {
+    width: 70%;
+    height: auto;
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);
 }
-
-/**************************************************************** Txt ******************/
+.box-x {
+    padding-top: 5vh;
+}
+.box-2 {
+    background-color: #0F2231;
+}
+.logo {
+    max-width: 200px;
+    height: auto;
+}
 .txt-1 {
-    font-size: 30px;
-    color: white !important;
-    margin-top: 5vh;
-    text-align: center;
-    margin-bottom: 3vh;
+    color: #fff;
     position: relative;
 }
 .txt-1::after {
-    top: 45px;
-    content: '';
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #aabbd7;
-    bottom: 0;
-    left: calc(50% - 25px);
-}
-
-.txt-2 {
-    font-size: 22px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 5vh;
-    font-weight: 300;
-}
-.txt-3 {
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    margin-top: 2vh;
-    font-weight: 500;
-}
-
-.txt-03 {
-    color: white;
-    font-size: 18px;
-}
-.txt-4 {
-    text-align: center;
-    color: white;
-}
-.txt-5 {
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    margin-top: 2vh;
-    font-weight: 700;
-}
-.txt-6 {
-    font-size: 14px !important;
-    font-weight: 200 !important;
-}
-.txt-7 {
-    font-size: 24px;
-    color: white;
-    text-align: right;
-    margin-bottom: -25px;
-}
-.txt-8 {
-    font-size: 12px;
-    color: white;
-    margin-bottom: 0px !important;
-    padding-left: 8px;
-}
-.txt-9 {
-    font-size: 24px;
-    color: #152f46;
-    font-weight: 600;
-    text-align: center;
-}
-.txt-10 {
-    text-align: center;
-}
-.txt-03 {
-    font-size: 16px !important;
-    color: #69757F;
-    font-weight: 700;
-}
-
-.txt-01 {
-    color: #fff;
-    position: relative;
-}
-.txt-01::after {
-    top: 85px;
+    top: 40px;
     content: "";
     position: absolute;
     display: block;
     width: 50px;
-    height: 1px;
+    height: 2px;
     background: #aabbd7;
     bottom: 0;
     left: calc(50% - 25px);
 }
-.txt-02 {
+.txt-2 {
     color: #fff;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 1.2rem;
 }
-.txt-05 {
-    font-size: 2.5rem;
-    font-weight: 700;
+.txt-3 {
+    color: #fff;
 }
-
-
-/************************************************************************************** CARD ***************  */
-.card-1 {
-    width: 100%;
-    max-width: 340px;
-    margin: auto;
-    background-color: #0E202F;
-    box-shadow: none !important;
-    margin-bottom: 15px;
+.txt-5 {
+    color: #fff;
+    font-size: 1.2rem;
 }
-.card-1:hover .txt-03 {
-    color: white !important;
-}
-.card-1:hover .txt-04 {
-    color: white !important;
-}
-.card-1:hover .btn-2 {
-    color: white !important;
-}
-.card-1:hover .i-1 {
-    opacity: 1 !important;
-}
-.card-1:hover {
-    background-color: #0D1E2B;
-}
-
-.card-1 .card-body {
-    padding: 10px 20px;
-}
-:root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: 0.75rem;
-}
-
-.card-2 {
-    background-color: #0D1E2B;
-    box-shadow: none;
-    margin-bottom: 20px;
-}
-
-
-
-.card-2 .card-body {
-    padding: 2.5 rem !important;
-    padding-top: 0px !important;
-}
-
-/****************************************************************Button  **************************************/
 
 .btn-1 {
-    padding: 10px 20px;
-    background-color: #0b1b29;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-.btn-1:hover {
-    background-color: #6e8ca0;
-    color: #0F2231;
-}
-.btn-2 {
-    background-color: #0F2231;
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    color: #69757F;
-}
-
-.btn-3 {
     background-color: #f2cb05;
     width: 100%;
     text-align: center;
@@ -190,128 +48,11 @@ body {
     border: none;
     border-radius: 5px;
     height: 40px;
-    margin-bottom: 40px;
 }
-.btn-3:hover {
+.btn-1:hover {
     background-color: #fff;
     color: #f2cb05;
 }
-
-/**********************************************************Icon  *******************************************/
-
-.i-1 {
-    width: 35px;
-    opacity: 0.5;
-}
-.i-2 {
-    font-size: 12px !important;
-    color: #f2cb05;
-}
-.i-3 {
-    font-size: 60px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-/********************************************************* BOX ******************************************/
-.box-01 {
-    background-color: #0F2231;
-    min-height: 100vh;
-    height: 800px;
-}
-.box-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-.box-1 {
-    width: 100%;
-    min-height: 100vh;
-    padding: 30px 10px 0px 10px;
-    background: #0f2231;
-}
-.box-2 {
-    min-width: 320px;
-    border-radius: 15px;
-    padding: 50px 40px 30px 40px;
-    background-color: white;
-    /* border: 0.5px solid #808080; */
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.box-022 {
-    background-color: #0F2231;
-}
-
-.box-03 {
-    opacity: 0.5;
-}
-
-.box-03:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-
-/********************************************************  */
-
-.logo {
-    text-align: center;
-    width: 160px;
-}
-.logo2 {
-    width: 70%;
-    height: auto;
-    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)
-}
-.line {
-    width: 100%;
-    height: 1px;
-    margin-top: 15px;
-    background-color: white;
-}
-.card-2 .card-header {
-    padding: 15px !important;
-}
-.list-1 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 20px;
-}
-
-.pay-img {
-    margin-top: 15px;
-    width: 120px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.pay-img:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-body {
-    margin: 0;
-}
-
-
-
-.f-img {
-    width: 40vw;
-    height: fit-content;
-    margin: auto;
-}
-.f-img-box {
-    text-align: center;
-}
-
-.logo-box {
-    width: 100%;
-    text-align: center;
-}
-
-
 .login-snip {
     width: 80%;
     margin: auto;
@@ -404,12 +145,6 @@ body {
     transform: rotate(0);
 }
 
-
-
-
-
-
-/* 88888888888888 */
 :root {
     --input-padding-x: 1.5rem;
     --input-padding-y: 0.75rem;
@@ -560,12 +295,16 @@ input[type="password"]::-ms-reveal {
     top: 0.8em;
     z-index: 9;
 }
+
 .fa {
     font-size: 20px;
 }
+
 .check-1-label {
     color: #6d8b9f;
 }
+
+
 .custom-checkbox {
     color: #6e8ca0;
     display: flex;
@@ -581,6 +320,7 @@ input[type="password"]::-ms-reveal {
     justify-content: flex-start;
     align-items: center;
 }
+
 /* Hide the browser's default checkbox */
 .custom-checkbox input {
     position: absolute;
@@ -589,6 +329,7 @@ input[type="password"]::-ms-reveal {
     height: 0;
     width: 0;
 }
+
 /* Create a custom checkbox */
 .checkmark {
     position: absolute;
@@ -599,20 +340,24 @@ input[type="password"]::-ms-reveal {
     border-radius: 2px;
     align-self: center;
 }
+
 /* On mouse-over, add a grey background color */
 .custom-checkbox:hover input ~ .checkmark {
     background-color: #ccc;
 }
+
 /* When the checkbox is checked, add a blue background */
 .custom-checkbox input:checked ~ .checkmark {
     background-color: #f2cb05;
 }
+
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
+
 /* Show the checkmark when checked */
 .custom-checkbox input:checked ~ .checkmark:after {
     display: block;
@@ -633,4 +378,136 @@ input[type="password"]::-ms-reveal {
 
 .x-1 {
     top: 3px !important;
+}
+.i-1 {
+    width: 35px;
+    opacity: 0.5;
+}
+.i-2 {
+    font-size: 12px !important;
+    color: #f2cb05;
+}
+.i-3 {
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+.txt-7 {
+    font-size: 24px;
+    color: white;
+    text-align: right;
+    margin-bottom: -25px;
+}
+.txt-8 {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 5px !important;
+    padding-left: 8px;
+    text-align: left;
+}
+.list-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 20px;
+}
+.btn-3 {
+    background-color: #f2cb05;
+    width: 80%;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    margin: auto;
+}
+.btn-3:hover {
+    background-color: #fff;
+    color: #f2cb05;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    margin-top: 15px;
+    background-color: white;
+}
+.txt-05 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.flex {
+    display: flex !important;
+}
+
+.card-2 {
+    background-color: #0D1E2B;
+    box-shadow: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+.card-2:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.card-box {
+    display: flex;
+}
+.card-2 .card-header {
+    border-bottom: none;
+}
+.desktop-inner {
+    min-height: 100vh;
+}
+.mobile {
+    background-color: #0F2231;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+.mobile .logo {
+    width: 150px;
+}
+.card-1 {
+    width: 100%;
+    max-width: 340px;
+    margin: auto;
+    background-color: #0E202F;
+    box-shadow: none !important;
+    margin-bottom: 15px;
+}
+.card-1:hover .txt-03 {
+    color: white !important;
+}
+.card-1:hover .txt-04 {
+    color: white !important;
+}
+.card-1:hover .btn-2 {
+    color: white !important;
+}
+.card-1:hover .i-1 {
+    opacity: 1 !important;
+}
+.card-1:hover {
+    background-color: #0D1E2B;
+}
+.card-1 .card-body {
+    padding: 10px 20px;
+}
+.txt-03 {
+    font-size: 16px !important;
+    color: #69757F;
+    font-weight: 700;
+}
+.btn-2 {
+    background-color: #0F2231;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    color: #69757F;
+}
+.register-content {
+    min-height: 100vh;
 }

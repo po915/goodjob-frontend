@@ -106,3 +106,28 @@ $(".custom-option-1").on("click", function () {
     $(this).parents(".custom-select-1").removeClass("opened");
     $(this).parents(".custom-select-1").find(".custom-select-1-trigger").text($(this).text());
 });
+// fog effect
+$(".3dots").on("click", function() {
+    $(".fog").fadeIn();
+    $(".header").addClass("blur");
+    $(".page-content").addClass("blur");
+    $("#sidenav-main").addClass("blur");
+    $(".navbar-top").addClass("blur");
+    $(".side-menu").addClass("show")
+});
+$(".fog").on("click", function() {
+    $(this).fadeOut();
+    $(".side-menu").removeClass("show");
+    $(".page-content").removeClass("blur");
+    $("#sidenav-main").removeClass("blur");
+    $(".navbar-top").removeClass("blur");
+    $(".header").removeClass("blur");
+});
+$(".btn-14").on("click", function() {
+    $(".fog").fadeOut();
+    $(".side-menu").removeClass("show");
+    $(".page-content").removeClass("blur");
+    $("#sidenav-main").removeClass("blur");
+    $(".navbar-top").removeClass("blur");
+    $(".header").removeClass("blur");
+})

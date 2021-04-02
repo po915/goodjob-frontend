@@ -180,24 +180,46 @@
             <!-- Modal body -->
             <div class="modal-body container">
                 <div class="row">
-                    <div class="form-group">
-                        <label class="form-control-label" for="add-jobname">Job name</label>
-                        <input type="text" class="form-control" id="add-jobname" placeholder="Add name" />
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-control-label" for="add-jobname">Job name</label>
+                            <input type="text" class="form-control" id="add-jobname" placeholder="Add name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row input-daterange datepicker align-items-center">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-control-label">Start date</label>
+                            <input class="form-control" placeholder="Start date" type="text" value="04/1/2021">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-control-label">End date</label>
+                            <input class="form-control" placeholder="End date" type="text" value="04/12/2021">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row input-daterange datepicker align-items-center">
-                        <div class="col">
-                            <div class="form-group">
-                                <label class="form-control-label label-1">Start date</label>
-                                <input class="form-control" placeholder="Start date" type="text" value="04/1/2021">
-                            </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-control-label" for="add-contact">Contact Person</label>
+                            <select id="add-contact" class="custom-select-1" placeholder="Contact person">
+                                <option value="it">Jane Snow</option>
+                                <option value="sas">John Winter</option>
+                            </select>
                         </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label class="form-control-label label-1">End date</label>
-                                <input class="form-control" placeholder="End date" type="text" value="04/12/2021">
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-control-label" for="add-phone">Phone number</label>
+                            <select id="add-phone" class="custom-select-1" placeholder="Contact person">
+                                <option value="it">+1234567890</option>
+                                <option value="sas">+123456789</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -205,7 +227,8 @@
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn bg-base text-white btn-secondary" data-dismiss="modal">Save</button>
+                <button type="button" class="btn bg-base text-white btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

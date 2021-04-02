@@ -92,3 +92,7 @@ Route::any('/reminder', function () {
 Route::any('/add-reminder', function () {
     return view('dashboard/addreminder');
 });
+
+Route::any('/work', function () {
+    return view('dashboard/work');
+});

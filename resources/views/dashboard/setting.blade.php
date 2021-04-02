@@ -7,6 +7,9 @@
 
 </style>
 @endsection
+
+<!-- change the class of button to "btn-9" to see hover effect -->
+
 @section('content')
     <!-- Header -->
     <div class="header">

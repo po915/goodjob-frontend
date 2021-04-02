@@ -64,7 +64,8 @@ body {
 .card-6 {
     background-color: #F0F3F4;
     width: fit-content;
-    min-width: 300px;
+    min-width: 325px;
+    box-shadow: none;
 }
 .card-6 h4 {
     font-weight: 600;
@@ -93,6 +94,26 @@ body {
     background-color: #f2f3f4;
     color: #0D1E2B;
 }
+
+.card-7:hover {
+    background-color: #193144;
+}
+.card-8 {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: none;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.card-8 p {
+    font-size: 14px;
+}
+.card-8 p:hover {
+    color: #2699FB;
+    cursor: pointer;
+}
+
+
 /**************************************************************** Txt ******************/
 .txt-dark {
     color: #0F2231 !important;
@@ -172,6 +193,14 @@ body {
 }
 .txt-20 {
     font-weight: 700 !important;
+}
+.txt-21 {
+    text-decoration: underline;
+    font-size: .8rem;
+}
+.txt-21:hover {
+    color: #2699FB;
+    cursor: pointer;
 }
 /**************************************************************** Button ******************/
 .btn-4 {
@@ -275,6 +304,14 @@ body {
 }
 .btn-14:hover {
     background-color: #f2f3f4;
+    color: #0F2231;
+}
+
+.btn-15 {
+    height: calc(.45em + 1.25rem + 5px);
+    border: none;
+    border-radius: .25rem;
+    background-color: #fff;
     color: #0F2231;
 }
 /**************************************************************** BackgroundColor ******************/
@@ -766,9 +803,6 @@ body {
     font-size: 21px;
 }
 
-.f-calendar {
-    /* max-height: 500px; */
-}
 .fc-direction-ltr .fc-timegrid-now-indicator-arrow {
     border-width: 10px 31px 10px 11px;
 }
@@ -1403,4 +1437,13 @@ li.date_picker_week_day {
     outline: 0;
     background-color: #fff;
     box-shadow: 0 3px 9px rgb(50 50 9 / 0%), 3px 4px 8px rgb(94 114 228 / 10%);
+}
+#addEvent .modal-dialog {
+    max-width: 500px;
+}
+#addStatus .modal-dialog {
+    max-width: 400px;
+}
+table thead th {
+    border-top-width: 0 !important;
 }

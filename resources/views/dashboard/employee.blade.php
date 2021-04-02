@@ -336,21 +336,39 @@
     <button class="btn-14"><i class="fa fa-times"></i> Close</button>
     <h1>What exactly <br> do you want to do?</h1>
     <div class="card-7 mx-auto mt-4">
-        <p class="my-auto">Search for Employees</p>
+        <p class="my-auto">Register New Employees</p>
         <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
-            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+            <span class="btn-inner--icon"><i class="fa fa-user"></i></span>
         </button>
     </div>
     <div class="card-7 mx-auto">
-        <p class="my-auto">Export employees</p>
+        <p class="my-auto">Register a new job</p>
         <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
-            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+            <span class="btn-inner--icon"><i class="fa fa-folder"></i></span>
         </button>
     </div>
     <div class="card-7 mx-auto">
-        <p class="my-auto">Import employees</p>
+        <p class="my-auto">Add new date to calendar</p>
         <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
-            <span class="btn-inner--icon"><i class="fa fa-arrow-right"></i></span>
+            <span class="btn-inner--icon"><i class="fa fa-calendar"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto mt-4">
+        <p class="my-auto">Register new contact person</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-user"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto mt-4">
+        <p class="my-auto">Register new customers</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-user"></i></span>
+        </button>
+    </div>
+    <div class="card-7 mx-auto mt-4">
+        <p class="my-auto">Capture new location</p>
+        <button type="button" class="btn btn-icon-only rounded-circle mr-3 my-auto">
+            <span class="btn-inner--icon"><i class="fa fa-map-marker"></i></span>
         </button>
     </div>
 </div>

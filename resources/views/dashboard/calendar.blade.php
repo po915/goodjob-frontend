@@ -1,7 +1,7 @@
 @extends('layout.dash')
 
 @section('style')
-<link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar5.1/main.css') }}">
+<link rel="stylesheet" href="{{ asset('template/vendor/fullcalendar5.1/main.css') }}">
 <style>
 .fc-header-toolbar {
     display: none !important;
@@ -238,7 +238,7 @@
 
 
 @section('script')
-<script src="{{ asset('assets/vendor/fullcalendar5.1/main.min.js') }}"></script>
+<script src="{{ asset('template/vendor/fullcalendar5.1/main.min.js') }}"></script>
 <script>
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');

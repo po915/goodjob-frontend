@@ -1,7 +1,7 @@
 @extends('layout.dash')
 
 @section('style')
-<link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar5.1/main.css') }}">
+<link rel="stylesheet" href="{{ asset('template/vendor/fullcalendar5.1/main.css') }}">
 <style>
 
 </style>
@@ -110,7 +110,7 @@
 
 
 @section('script')
-<script src="{{ asset('assets/vendor/fullcalendar5.1/main.min.js') }}"></script>
+<script src="{{ asset('template/vendor/fullcalendar5.1/main.min.js') }}"></script>
 <script>
 $(".card-4 .card-body").on("click", function() {
     var job_id = $(this).attr('job-id');

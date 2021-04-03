@@ -591,7 +591,7 @@
                         <h3 class="my-3">AVAILABLE MODULES</h3>
                         <div class="row mb-2">
                             <div class="col-lg-2">
-                                <div class="box-6"><p>Assets</p></div>
+                                <div class="box-6"><p>template</p></div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="box-6 selected-module"><p>Business hours</p></div>
@@ -671,7 +671,7 @@
                                         <th scope="row">
                                             <div class="media align-items-center">
                                                 <a href="#" class="avatar rounded-circle mr-3">
-                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-3.jpg" />
+                                                    <img alt="Image placeholder" src="../../template/img/theme/team-3.jpg" />
                                                 </a>
                                                 <div class="media-body">
                                                     <span class="name mb-0 text-sm">Jane Snow</span>
@@ -691,7 +691,7 @@
                                         <th scope="row">
                                             <div class="media align-items-center">
                                                 <a href="#" class="avatar rounded-circle mr-3">
-                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-3.jpg" />
+                                                    <img alt="Image placeholder" src="../../template/img/theme/team-3.jpg" />
                                                 </a>
                                                 <div class="media-body">
                                                     <span class="name mb-0 text-sm">Jane Snow</span>
@@ -869,7 +869,7 @@
                                         <th scope="row">
                                             <div class="media align-items-center">
                                                 <a href="#" class="avatar rounded-circle mr-3">
-                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-3.jpg" />
+                                                    <img alt="Image placeholder" src="../../template/img/theme/team-3.jpg" />
                                                 </a>
                                                 <div class="media-body">
                                                     <span class="name mb-0 text-sm">Jane Snow</span>
@@ -889,7 +889,7 @@
                                         <th scope="row">
                                             <div class="media align-items-center">
                                                 <a href="#" class="avatar rounded-circle mr-3">
-                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-3.jpg" />
+                                                    <img alt="Image placeholder" src="../../template/img/theme/team-3.jpg" />
                                                 </a>
                                                 <div class="media-body">
                                                     <span class="name mb-0 text-sm">Jane Snow</span>

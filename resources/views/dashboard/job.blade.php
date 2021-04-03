@@ -497,7 +497,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <a href="#" class="avatar avatar-xl rounded-circle">
-                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-2.jpg" />
+                                                    <img alt="Image placeholder" src="../../template/img/theme/team-2.jpg" />
                                                 </a>
                                             </div>
                                             <div class="col ml--2">
@@ -753,7 +753,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <a href="#" class="avatar avatar-xl rounded-circle">
-                                                    <img alt="Image placeholder" src="../../assets/img/theme/team-2.jpg" />
+                                                    <img alt="Image placeholder" src="../../template/img/theme/team-2.jpg" />
                                                 </a>
                                             </div>
                                             <div class="col ml--2">
@@ -806,7 +806,7 @@
 
 @section('script')
 
-<script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
+<script src="{{ asset('template/vendor/list.js/dist/list.min.js') }}"></script>
 <script>
     $(".pay-img").on("click", function() {
         // $.ajax({

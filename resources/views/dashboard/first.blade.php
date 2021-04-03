@@ -1,7 +1,7 @@
 @extends('layout.dash')
 
 @section('style')
-<link rel="stylesheet" href="{{ asset('assets/vendor/fullcalendar5.1/main.css') }}">       
+<link rel="stylesheet" href="{{ asset('template/vendor/fullcalendar5.1/main.css') }}">       
 <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
 <style>
 /* .fc-scrollgrid {
@@ -286,7 +286,7 @@
 
 
 @section('script')
-<script src="{{ asset('assets/vendor/fullcalendar5.1/main.min.js') }}"></script>
+<script src="{{ asset('template/vendor/fullcalendar5.1/main.min.js') }}"></script>
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 <!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
 <script

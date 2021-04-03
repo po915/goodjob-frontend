@@ -378,6 +378,6 @@
 
 
 @section('script')
-<script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
+<script src="{{ asset('template/vendor/list.js/dist/list.min.js') }}"></script>
 <script src="{{ asset('js/multi-select.js') }}"></script>
 @endsection

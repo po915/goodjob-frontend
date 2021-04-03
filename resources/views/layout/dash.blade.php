@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="{{ asset('assets/vendor/nucleo/css/nucleo.css') }}" type="text/css">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/select2/dist/css/select2.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/quill/dist/quill.core.css') }}">     
+        <link rel="stylesheet" href="{{ asset('template/vendor/nucleo/css/nucleo.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('template/vendor/select2/dist/css/select2.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('template/vendor/quill/dist/quill.core.css') }}">     
         <!-- <link rel="stylesheet" href="{{ asset('css/chosen.css') }}"> -->
         <link rel="stylesheet" href="{{ asset('css/argon.css?v=1.1.0') }}">
         <link rel="stylesheet" href="{{ asset('css/dashstyle.css') }}">
@@ -146,7 +146,7 @@
                                 <a class="nav-link pr-0" href="/profile">
                                     <div class="media align-items-center">
                                         <span class="avatar avatar-sm rounded-circle">
-                                            <img alt="Image placeholder" src="../../assets/img/theme/team-4.jpg" />
+                                            <img alt="Image placeholder" src="../../template/img/theme/team-4.jpg" />
                                         </span>
                                         <div class="media-body ml-2 d-none d-lg-block">
                                             <span class="mb-0 text-sm font-weight-bold txt-dark">Jane Snow</span>
@@ -192,23 +192,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <script src="{{ asset('assets/vendor/js-cookie/js.cookie.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
+        <script src="{{ asset('template/vendor/js-cookie/js.cookie.js') }}"></script>
+        <script src="{{ asset('template/vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
+        <script src="{{ asset('template/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
 
 
-        <!-- <script src="{{ asset('assets/vendor/chart.js/dist/Chart.min.js') }}"></script> -->
-        <!-- <script src="{{ asset('assets/vendor/chart.js/dist/Chart.extension.js') }}"></script> -->
-        <!-- <script src="{{ asset('assets/vendor/moment/min/moment.min.js') }}"></script> -->
-        <!-- <script src="{{ asset('assets/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script> -->
-        <!-- <script src="{{ asset('assets/vendor/select2/dist/js/select2.min.js') }}"></script> -->
-        <script src="{{ asset('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
-        <!-- <script src="{{ asset('assets/vendor/nouislider/distribute/nouislider.min.js') }}"></script> -->
-        <!-- <script src="{{ asset('assets/vendor/quill/dist/quill.min.js') }}"></script> -->
-        <script src="{{ asset('assets/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>
-        <!-- <script src="{{ asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script> -->
-        <script src="{{ asset('assets/js/argon.js?v=1.1.0') }}"></script>
-        <script src="{{ asset('assets/js/demo.min.js') }}"></script>
+        <!-- <script src="{{ asset('template/vendor/chart.js/dist/Chart.min.js') }}"></script> -->
+        <!-- <script src="{{ asset('template/vendor/chart.js/dist/Chart.extension.js') }}"></script> -->
+        <!-- <script src="{{ asset('template/vendor/moment/min/moment.min.js') }}"></script> -->
+        <!-- <script src="{{ asset('template/vendor/fullcalendar/dist/fullcalendar.min.js') }}"></script> -->
+        <!-- <script src="{{ asset('template/vendor/select2/dist/js/select2.min.js') }}"></script> -->
+        <script src="{{ asset('template/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+        <!-- <script src="{{ asset('template/vendor/nouislider/distribute/nouislider.min.js') }}"></script> -->
+        <!-- <script src="{{ asset('template/vendor/quill/dist/quill.min.js') }}"></script> -->
+        <script src="{{ asset('template/vendor/dropzone/dist/min/dropzone.min.js') }}"></script>
+        <!-- <script src="{{ asset('template/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script> -->
+        <script src="{{ asset('template/js/argon.js?v=1.1.0') }}"></script>
+        <script src="{{ asset('template/js/demo.min.js') }}"></script>
         <script src="{{ asset('js/custom.js') }}"></script>
 
 

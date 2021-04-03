@@ -114,7 +114,7 @@
 
 
 @section('script')
-<script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
+<script src="{{ asset('template/vendor/list.js/dist/list.min.js') }}"></script>
 <script>
 function toggle(source) {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');

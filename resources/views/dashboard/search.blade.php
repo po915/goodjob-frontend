@@ -6,7 +6,7 @@
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
-                <div class="row align-items-center py-4">
+                <div class="row py-4">
                     <div class="col-lg-6 col-7">
                         <h6 class="h1 d-inline-block mb-0 txt-dark">Search</h6>
                         <p>What are you looking for today?</p>

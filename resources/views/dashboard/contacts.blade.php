@@ -6,10 +6,9 @@
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
-                <div class="row align-items-center py-4">
+                <div class="row py-4">
                     <div class="col-lg-8 col-7 row mx-0">
                         <h1 class="d-inline-block mb-0 txt-dark my-auto ml-3 txt-12">All Contacts</h1>
-                        &nbsp;&nbsp;&nbsp;
                         <a href="/contacts-customer" class="h1 d-inline-block mb-0 ml-3 txt-dark my-auto medium txt-11">Customers</a>
 
                         <div class="form-group mb-0 my-auto ml-3 search-input">

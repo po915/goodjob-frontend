@@ -16,7 +16,7 @@
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
-                <div class="row align-items-center py-4">
+                <div class="row py-4">
                     <div class="col-lg-8 col-8 row mx-0">
                         <h1 class="d-inline-block mb-0 ml-3 txt-dark my-auto txt-12">Settings</h1>
                         

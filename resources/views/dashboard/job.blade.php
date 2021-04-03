@@ -6,7 +6,7 @@
 <div class="header">
     <div class="container-fluid">
         <div class="header-body">
-            <div class="row align-items-center py-4">
+            <div class="row py-4">
                 <div class="col-lg-6 col-7">
                     <h1 class="h2 d-inline-block mb-0 txt-dark">John Snow's Jobs</h6>
                     <p>These are your current jobs.</p>
@@ -305,7 +305,7 @@
                 </div>
                 <div class="card-body">
                     <form>
-                        <h6 class="heading-small text-muted mb-4">ID: HOE12 &nbsp;&nbsp;&nbsp; Start: Friday, 27</h6>
+                        <h6 class="heading-small text-muted mb-4">ID: HOE12  Start: Friday, 27</h6>
                         <div>
                             <div class="row">
                                 <div class="col-lg-6">

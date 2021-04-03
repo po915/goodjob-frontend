@@ -13,7 +13,7 @@
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
-                <div class="row align-items-center py-4">
+                <div class="row py-4">
                     <div class="col-lg-8 col-8">
                         <a href="/setting" class="h1 d-inline-block mb-0 txt-dark my-auto medium  txt-11">Settings</a>
                         <a href="/work" class="h1 d-inline-block mb-0 txt-dark medium my-auto txt-11">Work</a>

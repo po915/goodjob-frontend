@@ -10,7 +10,7 @@
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
-                <div class="row align-items-center py-4">
+                <div class="row py-4">
                     <div class="col-lg-8 col-7">
                         <h1 class="d-inline-block mb-0 txt-dark my-auto">Places</h1>
                         <p>These are your appointments nearby.</p>

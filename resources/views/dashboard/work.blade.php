@@ -13,7 +13,7 @@
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
-                <div class="row align-items-center py-4">
+                <div class="row py-4">
                     <div class="col-lg-8 col-8">
                         <a href="/setting" class="h1 d-inline-block mb-0 txt-dark my-auto medium  txt-11">Settings</a>
                         <a class="h1 d-inline-block mb-0 txt-dark my-auto txt-12">Work</a>
@@ -122,7 +122,7 @@
                     <!-- Email activity feed -->
                     <div class="tab-pane fade container-fluid px-3" id="v-pills-three" role="three" aria-labelledby="v-pills-three-tab">
                         <div class="row bg-base py-3 px-3">
-                            <div class="form-group mb-0">
+                            <div class="form-group mb-0 mx-3 mx-sm-0 form-4">
                                 <div class="input-group input-group-merge">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text form-preicon-sm"><i class="fa fa-search"></i></span>

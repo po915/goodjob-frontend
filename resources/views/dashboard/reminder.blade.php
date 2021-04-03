@@ -30,7 +30,7 @@
     <!-- Page content -->
     <div class="container-fluid reminder">
         <div class="container-fluid page-content py-2">
-            <div class="row my-2">
+            <div class="row my-2 pl-4">
                 <span class="badge badge-dot mr-4">
                     <i class="bg-warning"></i>
                     <span class="status">Active</span>
@@ -43,13 +43,15 @@
             </div>
             <div class="container-fluid box-10 mb-2">
                 <div class="row py-3">
-                    <select name="period" id="period" class="cus-select reminder-select-1 col" placeholder="Period">
-                        <option value="tiger">Done</option>
-                        <option value="lion">Undone</option>
-                        <option value="elephant">XYZ</option>
-                    </select>
-                    <button type="button" class="btn btn-default mr-3 btn-12">Apply</button>
                     <div class="form-group mb-0">
+                        <select name="period" id="period" class="cus-select reminder-select-1 col" placeholder="Period">
+                            <option value="tiger">Done</option>
+                            <option value="lion">Undone</option>
+                            <option value="elephant">XYZ</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-default mr-3 btn-12">Apply</button>
+                    <div class="form-group mb-0 mt-2 mt-sm-0 ml-3 ml-sm-0">
                         <div class="input-group input-group-merge">
                             <div class="input-group-prepend">
                                 <span class="input-group-text form-preicon-sm"><i class="fa fa-search"></i></span>
@@ -57,7 +59,7 @@
                             <input class="form-control form-control-sm" placeholder="Keyword" type="text">
                         </div>
                     </div>
-                    <button type="button" class="btn btn-12 ml-3" id="add-reminder"><i class="fa fa-plus"></i> ADD REMINDER</button>
+                    <button type="button" class="btn btn-12 ml-3 mt-2 mt-sm-0" id="add-reminder"><i class="fa fa-plus"></i> ADD REMINDER</button>
                 </div>
             </div>
 

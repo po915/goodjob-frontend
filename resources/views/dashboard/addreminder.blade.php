@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="header-body">
                 <div class="row mb--3 mt-2 ml-1">
-                    <button type="button" class="btn btn-facebook btn-icon-only rounded-circle my-auto" id="back">
+                    <button type="button" class="btn  bg-base text-white btn-icon-only rounded-circle my-auto" id="back">
                         <span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>
                     </button>
                     <h4 class="my-auto ml-2">Back</h4>

@@ -37,20 +37,20 @@
     <!-- Page content -->
     <div class="container-fluid">
         <div class="card card-3">
-            <div class="card-header bg-base">
+            <div class="card-header bg-base px-0 px-sm-2">
                 <div class="container-fluid">
                     <ul class="nav nav-tabs profile-nav" role="tablist">
                         <li class="nav-item">
-                            <a class="my-auto ml-3 nav-link active" data-toggle="tab" href="#profile"><i class="fa fa-heart mr-2"></i> Profile</a>
+                            <a class="my-auto nav-link active" data-toggle="tab" href="#profile"><i class="fa fa-heart mr-2"></i> Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="my-auto ml-3 nav-link" data-toggle="tab" href="#user"><i class="fa fa-user mr-2"></i> User</a>
+                            <a class="my-auto nav-link" data-toggle="tab" href="#user"><i class="fa fa-user mr-2"></i> User</a>
                         </li>
                         <li class="nav-item">
-                            <a class="my-auto ml-3 nav-link" data-toggle="tab" href="#customer"><i class="fa fa-users mr-2"></i> Customer</a>
+                            <a class="my-auto nav-link" data-toggle="tab" href="#customer"><i class="fa fa-users mr-2"></i> Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="my-auto ml-3 nav-link" data-toggle="tab" href="#notification"><i class="fa fa-envelope-o mr-2"></i> Notifications</a>
+                            <a class="my-auto nav-link" data-toggle="tab" href="#notification"><i class="fa fa-envelope-o mr-2"></i> Notifications</a>
                         </li>
                     </ul>
                 </div>

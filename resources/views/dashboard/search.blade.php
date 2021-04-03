@@ -1,6 +1,7 @@
 @extends('layout.dash')
 
 @section('content')
+<div class="is-active" val="search"></div>
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">
@@ -31,20 +32,21 @@
     <!-- Page content -->
     <div class="container-fluid">
         <div class="page-content container-fluid pt-4">
-            <form class="navbar-search navbar-search-light form-inline mb-3" id="navbar-search-main">
-                <div class="form-group mb-0">
-                    <div class="input-group input-group-alternative input-group-merge">
+            
+            <div class="row">
+                <div class="form-group mb-0 my-auto ml-4 search-input">
+                    <div class="input-group input-group-merge">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-search"></i></span>
                         </div>
-                        <input class="form-control" placeholder="Enter search term here..." type="text">
+                        <input class="form-control" placeholder="Enter search terms here..." type="text">
                     </div>
                 </div>
-                <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
+
                 <button id="search-btn">Search</button>
-            </form>
+            </div>
+            
+
 
             <p class="txt-dark tm bold">Search Results</p>
             <div class="line-2 mx-2"></div>

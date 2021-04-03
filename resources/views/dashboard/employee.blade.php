@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<div class="is-active" val="employee"></div>
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">
@@ -52,22 +53,22 @@
                             </div>
                             <div class="col-auto">
                                 <form class="form-1 row-1 row">
-                                    <select name="team" id="team" class="cus-select col" placeholder="Team: Support">
+                                    <select name="team" id="team" class="cus-select" placeholder="Team: Support">
                                         <option value="tiger">Tiger</option>
                                         <option value="lion">Lion</option>
                                         <option value="elephant">Elephant</option>
                                     </select>
-                                    <select name="location" id="location" class="cus-select col" placeholder="Locations">
+                                    <select name="location" id="location" class="cus-select" placeholder="Locations">
                                         <option value="carnivora">Carnivora</option>
                                         <option value="herbivora">Herbivora</option>
                                         <option value="omnivora">Omnivora</option>
                                     </select>
-                                    <select name="assigned" id="assigned" class="cus-select col" placeholder="Assigned">
+                                    <select name="assigned" id="assigned" class="cus-select" placeholder="Assigned">
                                         <option value="carnivora">Carnivora</option>
                                         <option value="herbivora">Herbivora</option>
                                         <option value="omnivora">Omnivora</option>
                                     </select>
-                                    <select name="level" id="level" class="cus-select col" placeholder="Support Level">
+                                    <select name="level" id="level" class="cus-select" placeholder="Support Level">
                                         <option value="carnivora">Lorem</option>
                                         <option value="herbivora">Ipsum</option>
                                         <option value="omnivora">Dolor</option>

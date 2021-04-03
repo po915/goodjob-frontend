@@ -28,7 +28,7 @@
         </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid">
+    <div class="container-fluid reminder">
         <div class="container-fluid page-content py-2">
             <div class="row my-2">
                 <span class="badge badge-dot mr-4">

@@ -9,6 +9,7 @@
 @endsection('style')
 
 @section('content')
+<div class="is-active" val="calendar"></div>
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">

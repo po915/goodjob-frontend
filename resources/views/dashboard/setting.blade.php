@@ -11,19 +11,22 @@
 <!-- change the class of button to "btn-9" to see hover effect -->
 
 @section('content')
+<div class="is-active" val="setting"></div>
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
                 <div class="row align-items-center py-4">
-                    <div class="col-lg-8 col-7">
-                        <h1 class="d-inline-block mb-0 txt-dark my-auto txt-12">Settings</h1>
-                        &nbsp;&nbsp;&nbsp;
-                        <a href="/work" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Work</a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a href="/company-info" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Company Information</a>
+                    <div class="col-lg-8 col-8 row mx-0">
+                        <h1 class="d-inline-block mb-0 ml-3 txt-dark my-auto txt-12">Settings</h1>
+                        
+                        <a href="/work" class="h1 d-inline-block mb-0 ml-3 txt-dark my-auto medium txt-11">Work</a>
+                        
+                        <a href="/company-info" class="h1 d-inline-block mb-0 ml-3 txt-dark my-auto medium txt-11">Company Information</a>
+                        
+                        <a href="/connect-calendar" class="h1 d-inline-block mb-0 ml-3 txt-dark my-auto medium txt-11">Connect Calendar</a>
                     </div>
-                    <div class="col-lg-4 col-5 text-right">
+                    <div class="col-lg-4 col-4 text-right">
                         <button type="button" class="btn btn-twitter btn-icon-only rounded-circle" data-toggle="modal" data-target="#addCustomer">
                             <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
                         </button>
@@ -636,13 +639,13 @@
                         </div>
                     </div>
 
-                    <!-- 5th Tab -->
+                    <!-- Team Tab -->
 
                     <div class="tab-pane fade container-fluid pt-5 px-0" id="v-pills-five" role="five" aria-labelledby="v-pills-five-tab">
                         <p class="mb-3 px-4">Group your fieldworkers on the scheduler into teams and sub teams. <br>
                             Your teams can include location based or service/skill based teams.</p>
 
-                        <div class="box-7 flex">
+                        <div class="box-7 row mx-0">
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-merge">
                                     <div class="input-group-prepend">
@@ -833,13 +836,13 @@
                         </div>
                     </div>
 
-                    <!-- 10th tab -->
+                    <!-- Staff member tab -->
 
                     <div class="tab-pane fade container-fluid pt-5 px-0" id="v-pills-ten" role="ten" aria-labelledby="v-pills-ten-tab">
                         <p class="mb-3 px-4">Group your fieldworkers on the scheduler into teams and sub teams. <br>
                             Your teams can include location based or service/skill based teams.</p>
 
-                        <div class="box-7 flex">
+                        <div class="box-7 row mx-0">
                             <div class="form-group mb-0">
                                 <div class="input-group input-group-merge">
                                     <div class="input-group-prepend">
@@ -983,11 +986,11 @@
                         <button class="btn-9">Save</button>
                     </div>
 
-                    <!-- 12th tab -->
+                    <!-- Roles and Permission tab -->
                     <div class="tab-pane fade container-fluid pt-5" id="v-pills-twelve" role="twelve" aria-labelledby="v-pills-twelve-tab">
                         <h3>ROLES & PERMISSION</h3>
                         <p>Fine tune what various staff members can see and do</p>
-                        <div class="flex mt-3">
+                        <div class="row mx-0 mt-4">
                             <div>
                                 <h4>ROLES</h4>
                                 <p>Roles for permission assigning</p>

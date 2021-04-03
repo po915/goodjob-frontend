@@ -8,19 +8,19 @@
 </style>
 @endsection
 @section('content')
+<div class="is-active" val="setting"></div>
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
                 <div class="row align-items-center py-4">
-                    <div class="col-lg-8 col-7">
+                    <div class="col-lg-8 col-8">
                         <a href="/setting" class="h1 d-inline-block mb-0 txt-dark my-auto medium  txt-11">Settings</a>
-                        &nbsp;&nbsp;&nbsp;
                         <a class="h1 d-inline-block mb-0 txt-dark my-auto txt-12">Work</a>
-                        &nbsp;&nbsp;&nbsp;
                         <a href="/company-info" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Company Information</a>
+                        <a href="/connect-calendar" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Connect Calendar</a>
                     </div>
-                    <div class="col-lg-4 col-5 text-right">
+                    <div class="col-lg-4 col-4 text-right">
                         <button type="button" class="btn btn-twitter btn-icon-only rounded-circle" data-toggle="modal" data-target="#addCustomer">
                             <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
                         </button>

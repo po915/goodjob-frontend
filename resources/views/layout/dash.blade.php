@@ -23,6 +23,7 @@
         @yield('style')
     </head>
     <body>
+        
         <!-- Sidenav -->
         <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-base" id="sidenav-main">
             <div class="scrollbar-inner">
@@ -49,12 +50,10 @@
                         <!-- Nav items -->
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="/employee">
+                                <a class="nav-link" href="/employee">
                                     <i class="ni ni-single-02 "></i>
                                     <span class="nav-link-text">Employees</span>
-                                    <!-- <div class="nav-active"></div> -->
                                 </a>
-                                
                             </li>  
                             <li class="nav-item">
                                 <a class="nav-link" href="/job">
@@ -219,6 +218,13 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
+            
+            // yellow bar to active nav-item
+            $(document).ready(function () {
+                $("[href='/"+$(".is-active").attr('val')+"']").addClass('active');
+                $("a.active").parent().addClass("active-nav");
+            });
+
         </script>
         @yield('script')
     </body>  

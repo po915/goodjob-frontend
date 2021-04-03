@@ -1,6 +1,7 @@
 @extends('layout.dash')
 
 @section('content')
+<div class="is-active" val="job"></div>
 <!-- Header -->
 <div class="header">
     <div class="container-fluid">
@@ -41,22 +42,22 @@
                     </div>
                     <div class="col-auto">
                         <form class="form-1 row-1 row">
-                            <select name="period" id="period" class="cus-select col" placeholder="Period">
+                            <select name="period" id="period" class="cus-select" placeholder="Period">
                                 <option value="tiger">Tiger</option>
                                 <option value="lion">Lion</option>
                                 <option value="elephant">Elephant</option>
                             </select>
-                            <select name="status" id="status" class="cus-select col" placeholder="Status">
+                            <select name="status" id="status" class="cus-select" placeholder="Status">
                                 <option value="carnivora">Carnivora</option>
                                 <option value="herbivora">Herbivora</option>
                                 <option value="omnivora">Omnivora</option>
                             </select>
-                            <select name="customer" id="customer" class="cus-select col" placeholder="Customer">
+                            <select name="customer" id="customer" class="cus-select" placeholder="Customer">
                                 <option value="carnivora">Carnivora</option>
                                 <option value="herbivora">Herbivora</option>
                                 <option value="omnivora">Omnivora</option>
                             </select>
-                            <select name="level" id="level" class="cus-select col" placeholder="Support Level">
+                            <select name="level" id="level" class="cus-select" placeholder="Support Level">
                                 <option value="carnivora">Lorem</option>
                                 <option value="herbivora">Ipsum</option>
                                 <option value="omnivora">Dolor</option>
@@ -827,3 +828,4 @@
     });
 </script>
 @endsection
+

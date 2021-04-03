@@ -184,17 +184,17 @@
                     <div id="user" class="container tab-pane fade">
                         <div class="row">
                             <form class="form-1 row-1 row">
-                                <select name="ort" id="ort" class="cus-select col" placeholder="ORT">
+                                <select name="ort" id="ort" class="cus-select" placeholder="ORT">
                                     <option value="tiger">Filter1</option>
                                     <option value="lion">Lion</option>
                                     <option value="elephant">Elephant</option>
                                 </select>
-                                <select name="kanton" id="kanton" class="cus-select col" placeholder="Kanton">
+                                <select name="kanton" id="kanton" class="cus-select" placeholder="Kanton">
                                     <option value="carnivora">Application</option>
                                     <option value="herbivora">Herbivora</option>
                                     <option value="omnivora">Omnivora</option>
                                 </select>
-                                <select name="employee" id="employee" class="cus-select col" placeholder="Assigned Employee">
+                                <select name="employee" id="employee" class="cus-select" placeholder="Assigned Employee">
                                     <option value="carnivora">Support art<article></article></option>
                                     <option value="herbivora">Herbivora</option>
                                     <option value="omnivora">Omnivora</option>
@@ -259,17 +259,17 @@
                     <div id="customer" class="container tab-pane fade">
                         <div class="row">
                             <form class="form-1 row-1 row">
-                                <select name="ort" id="ort" class="cus-select col" placeholder="ORT">
+                                <select name="ort" id="ort" class="cus-select" placeholder="ORT">
                                     <option value="tiger">Branch</option>
                                     <option value="lion">Lion</option>
                                     <option value="elephant">Elephant</option>
                                 </select>
-                                <select name="kanton" id="kanton" class="cus-select col" placeholder="Kanton">
+                                <select name="kanton" id="kanton" class="cus-select" placeholder="Kanton">
                                     <option value="carnivora">Kanton</option>
                                     <option value="herbivora">Herbivora</option>
                                     <option value="omnivora">Omnivora</option>
                                 </select>
-                                <select name="employee" id="employee" class="cus-select col" placeholder="Assigned Employee">
+                                <select name="employee" id="employee" class="cus-select" placeholder="Assigned Employee">
                                     <option value="carnivora">Support art<article></article></option>
                                     <option value="herbivora">Herbivora</option>
                                     <option value="omnivora">Omnivora</option>

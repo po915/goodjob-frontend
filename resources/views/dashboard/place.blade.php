@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<div class="is-active" val="place"></div>
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">
@@ -12,7 +13,7 @@
                 <div class="row align-items-center py-4">
                     <div class="col-lg-8 col-7">
                         <h1 class="d-inline-block mb-0 txt-dark my-auto">Places</h1>
-                        <p>These are you appointments nearby.</p>
+                        <p>These are your appointments nearby.</p>
                     </div>
                     <div class="col-lg-4 col-5 text-right">
                         <button type="button" class="btn btn-twitter btn-icon-only rounded-circle" data-toggle="modal" data-target="#addCustomer">
@@ -35,16 +36,14 @@
     <!-- Page content -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 mb-3">
                 <div id="map-2"></div>
             </div>
             <div class="col-lg-5">
                 <div class="card ml-2">
-                    <!-- Card header -->
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">
-                                <!-- Title -->
                                 <h5 class="h3 mb-0">Distance</h5>
                             </div>
                             <div class="col-4 text-right">
@@ -54,7 +53,6 @@
                     </div>
                     <div class="card-body">
                         <div class="card bg-grey distance-card mb-1" job-id="1">
-                            <!-- Card body -->
                             <div class="card-body py-4">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
@@ -76,9 +74,9 @@
                         </div>
 
                         <div class="card card-sub-distance bg-grey mb-1 detail-1">
-                            <h4 class="mt-4 ml-3 ">Update printer driver</h4>
-                            <p class="ml-3">COO1</p>
-                            <div class="container-fluid">
+                            <h4 class="mt-4 ">Update printer driver</h4>
+                            <p>COO1</p>
+                            <div class="container px-0">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
                                         <p class="txt-13"><span>Start Date: </span>Thursday, July 24th | 5:30 PM</p>
@@ -146,9 +144,9 @@
                         </div>
 
                         <div class="card card-sub-distance bg-grey mb-1 detail-2">
-                            <h4 class="mt-4 ml-3 ">Update printer driver</h4>
-                            <p class="ml-3">COO1</p>
-                            <div class="container-fluid">
+                            <h4 class="mt-4 ">Update printer driver</h4>
+                            <p>COO1</p>
+                            <div class="container px-0">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12 px-0">  
                                         <p class="txt-13"><span>Start Date: </span>Thursday, July 24th | 5:30 PM</p>

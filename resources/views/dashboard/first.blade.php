@@ -64,12 +64,12 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card card-calendar">
-                    <div class="card-header flex">
-                        <div class="col-lg-3 mt-3 mt-lg-0 text-lg-left">
+                    <div class="card-header row mx-3 px-0">
+                        <div class="col-lg-3 mt-3 mt-lg-0 text-lg-left col-sm-4">
                             <h5 class="h3 mb-0">Calendar</h5>
                         </div>
 
-                        <div class="col-lg-9 mt-3 mt-lg-0 text-lg-right px-0">
+                        <div class="col-lg-9 mt-3 mt-lg-0 text-lg-right px-0 col-sm-8">
                             <!-- <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="month">M</button>
                             <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="basicWeek">W</button>
                             <button type="button" class="btn rounded-circle btn-icon-only btn-7" data-calendar-view="basicDay">D</button> -->
@@ -98,80 +98,82 @@
             <div class="card-header">
                 <h5 class="h3 mb-0">Your next job</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body px-2">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card next-job-card">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col ml--2">
-                                            <h4 class="mb-0">
-                                                <a href="#!">Maintenance in house blabla</a>
-                                            </h4>
-                                            <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
-                                        </div>
-                                        <p class="mb-0 work-time">09.00 - 12.00 AM</p>
-                                        <small>Pending </small>
-                                        <span class="text-warning">●</span>
-                                    </div>
+                        <div class="col-lg-6 px-0">
+                            <div class="next-job-card py-3 px-2 row mb-3">
+                                <div class="col-sm-7 px-0 my-auto">
+                                    <h4 class="mb-0">
+                                        <a href="#!">Maintenance in house blabla</a>
+                                    </h4>
+                                    <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
+                                </div>
+                                <div class="col-sm-3 px-0 my-auto">
+                                    <p class="work-time mb-0">09.00 - 12.00 AM</p>
+                                </div>
+                                <div class="col-sm-2 px-0 my-auto text-right">
+                                    <small>Pending </small>
+                                    <span class="text-warning">●</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card next-job-card">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col ml--2">
-                                            <h4 class="mb-0">
-                                                <a href="#!">Maintenance in house blabla</a>
-                                            </h4>
-                                            <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
-                                        </div>
-                                        <p class="mb-0 work-time">09.00 - 12.00 AM</p>
-                                        <small>Pending </small>
-                                        <span class="text-warning">●</span>
-                                    </div>
+                        <div class="col-lg-6 px-0">
+                            <div class="next-job-card py-3 px-2 row mb-3">
+                                <div class="col-sm-7 px-0 my-auto">
+                                    <h4 class="mb-0">
+                                        <a href="#!">Maintenance in house blabla</a>
+                                    </h4>
+                                    <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
+                                </div>
+                                <div class="col-sm-3 px-0 my-auto">
+                                    <p class="work-time mb-0">09.00 - 12.00 AM</p>
+                                </div>
+                                <div class="col-sm-2 px-0 my-auto text-right">
+                                    <small>Pending </small>
+                                    <span class="text-warning">●</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card next-job-card">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col ml--2">
-                                            <h4 class="mb-0">
-                                                <a href="#!">Maintenance in house blabla</a>
-                                            </h4>
-                                            <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
-                                        </div>
-                                        <p class="mb-0 work-time">09.00 - 12.00 AM</p>
-                                        <small>Approved </small>
-                                        <span class="text-success">●</span>
-                                    </div>
+                        <div class="col-lg-6 px-0">
+                            <div class="next-job-card py-3 px-2 row mb-3">
+                                <div class="col-sm-7 px-0 my-auto">
+                                    <h4 class="mb-0">
+                                        <a href="#!">Maintenance in house blabla</a>
+                                    </h4>
+                                    <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
+                                </div>
+                                <div class="col-sm-3 px-0 my-auto">
+                                    <p class="work-time mb-0">09.00 - 12.00 AM</p>
+                                </div>
+                                <div class="col-sm-2 px-0 my-auto text-right">
+                                    <small>Pending </small>
+                                    <span class="text-warning">●</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card next-job-card">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col ml--2">
-                                            <h4 class="mb-0">
-                                                <a href="#!">Maintenance in house blabla</a>
-                                            </h4>
-                                            <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
-                                        </div>
-                                        <p class="mb-0 work-time">09.00 - 12.00 AM</p>
-                                        <small>Pending </small>
-                                        <span class="text-warning">●</span>
-                                    </div>
+                        <div class="col-lg-6 px-0">
+                            <div class="next-job-card py-3 px-2 row mb-3">
+                                <div class="col-sm-7 px-0 my-auto">
+                                    <h4 class="mb-0">
+                                        <a href="#!">Maintenance in house blabla</a>
+                                    </h4>
+                                    <p class="text-sm text-muted mb-0">Lorem ipsum dolor Lorem ipsum dolor</p>
+                                </div>
+                                <div class="col-sm-3 px-0 my-auto">
+                                    <p class="work-time mb-0">09.00 - 12.00 AM</p>
+                                </div>
+                                <div class="col-sm-2 px-0 my-auto text-right">
+                                    <small>Pending </small>
+                                    <span class="text-warning">●</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -367,6 +369,7 @@
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
             displayEventTime: false,
+            eventStartEditable: false,
             eventTextColor: "#0f2231",
             allDaySlot: false,
             height: height,

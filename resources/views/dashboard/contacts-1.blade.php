@@ -1,28 +1,24 @@
 @extends('layout.dash')
 
 @section('content')
+<div class="is-active" val="contacts"></div>
     <!-- Header -->
     <div class="header">
         <div class="container-fluid">
             <div class="header-body">
                 <div class="row align-items-center py-4">
-                    <div class="col-lg-8 col-7 flex">
-                        <a href="/contacts" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">All Contacts</h1>
-                        &nbsp;&nbsp;&nbsp;
-                        <a class="h1 d-inline-block mb-0 txt-dark my-auto txt-12">Customers</a>
-                        <form class="navbar-search navbar-search-light form-inline mb-3 my-auto ml-3" id="navbar-search-main">
-                            <div class="form-group mb-0">
-                                <div class="input-group input-group-alternative input-group-merge bg-white">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-search"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Search for customers..." type="text">
+                    <div class="col-lg-8 col-7 row mx-0">
+                        <a href="/contacts" class="h1 d-inline-block mb-0 ml-3 txt-dark my-auto medium txt-11">All Contacts</h1>
+                        
+                        <a class="h1 d-inline-block mb-0 ml-3 txt-dark my-auto txt-12">Customers</a>
+                        <div class="form-group mb-0 my-auto ml-3 search-input">
+                            <div class="input-group input-group-merge">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
                                 </div>
+                                <input class="form-control" placeholder="Search for customers" type="text">
                             </div>
-                            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </form>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-5 text-right">
                         <button type="button" class="btn btn-twitter btn-icon-only rounded-circle" data-toggle="modal" data-target="#addCustomer">
@@ -48,12 +44,10 @@
         <div class="card">
             <div class="card-header border-0">
                 <div class="row">
-                    <div class="col">
-
+                    <div class="col row">
                         <button class="btn-6">Export Customers</button>
                         <button class="btn-6">Import Customers</button>
                         <button class="btn-6" data-toggle="modal" data-target="#addCustomer"><i class="fa fa-plus"></i> Add New Customer</button>
-
                     </div>
                 </div>
             </div>
@@ -144,7 +138,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 text-right flex">
-                            <p>Corporate Client &nbsp;&nbsp;&nbsp;</p>
+                            <p>Corporate Client </p>
                             <label class="custom-toggle custom-toggle-default">
                                 <input type="checkbox" checked="">
                                 <span class="custom-toggle-slider rounded-circle" data-label-off="No" data-label-on="Yes"></span>

@@ -61,17 +61,18 @@ body {
     box-shadow: none;
     margin-bottom: 10px;
 }
+
 .card-6 {
     background-color: #F0F3F4;
     width: fit-content;
-    min-width: 325px;
+    min-width: 300px;
     box-shadow: none;
 }
 .card-6 h4 {
     font-weight: 600;
 }
 .card-sub-distance {
-    padding: 1px 0px;
+    padding: 1px 25px;
     display: none;
 }
 .card-7 {
@@ -138,6 +139,9 @@ body {
 }
 .txt-11:hover {
     opacity: 0.9;
+}
+.txt-11, .txt-12 {
+    margin-left: 10px;
 }
 /* .txt-12::after {
     top: 2.5rem;
@@ -232,6 +236,7 @@ body {
     color: white;
     border-radius: 3px;
     padding: 5px 15px;
+    margin: 5px;
 }
 .btn-6:hover {
     background-color: #eaeaea;
@@ -374,6 +379,7 @@ body {
     padding-bottom: 1rem;
     background-color: #f2f3f4;
     border-radius: 5px;
+    margin-bottom: .5rem;
     /* margin: 10px; */
 }
 .box-6:hover {
@@ -400,6 +406,19 @@ body {
 .box-7 .form-control {
     border-radius: 0px 25px 25px 0px;
 }
+
+.search-input .input-group {
+    width: fit-content;
+    min-width: 250px;
+    border-radius: 30px;
+}
+.search-input .input-group-text {
+    border-radius: 25px 0px 0px 25px;
+}
+.search-input .form-control {
+    border-radius: 0px 25px 25px 0px;
+}
+
 .selected-module {
     background-color: #EFC804;
 }
@@ -424,6 +443,21 @@ body {
     border-bottom: 0.5px solid #ececec;
     max-width: 500px;
     justify-content: space-between;
+}
+.box-12 {
+    text-align: center;
+    background-color: #F0F3F4;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+.box-12:hover {
+    background-color: #0f2231;
+}
+.box-12 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
 }
 /**************************************************************** Map ******************/
 .map-1 { 
@@ -637,9 +671,9 @@ body {
     padding: 5px !important;
     background-color: white !important;
 }
-.page-content {
+.reminder .page-content {
     border-radius: 5px;
-    background-color: white;
+    background-color: #fff;
 }
 #search-btn {
     border: none;
@@ -682,11 +716,13 @@ body {
 } */
 .work-time {
     font-size: 12px;
-    margin-right: 50px;
 }
 
 .next-job-card {
+    border-radius: 5px;
     background-color: #eee;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .opt-1 {
@@ -1409,6 +1445,7 @@ li.date_picker_week_day {
     filter: blur(5px);
 }
 .side-menu {
+    overflow: auto;
     position: fixed;
     z-index: 1000000;
     right: -350px;
@@ -1446,4 +1483,15 @@ li.date_picker_week_day {
 }
 table thead th {
     border-top-width: 0 !important;
+}
+
+/* Dashboard Customize */
+.sidenav {
+    border-right: none;
+}
+.sidenav .active-nav {
+    border-right: 4px solid #F2CB05;
+}
+.custom-toggle {
+    min-width: 52px;
 }

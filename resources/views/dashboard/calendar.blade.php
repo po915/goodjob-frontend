@@ -73,6 +73,7 @@
 @endsection('style')
 
 @section('content')
+<div class="is-active" val="calendar"></div>
 <!-- Header -->
 <div class="header">
     <div class="container-fluid">
@@ -81,7 +82,6 @@
                 <div class="col-lg-6 col-7">
                     <!-- <h6 class="h1 text-white d-inline-block mb-0 txt-dark">Calendar</h6> -->
                     <h1 class="d-inline-block mb-0 txt-dark my-auto txt-12">Calendar</h1>
-                    &nbsp;&nbsp;&nbsp;
                     <a href="/schedule" class="h1 d-inline-block mb-0 txt-dark my-auto medium txt-11">Scheduling</a>
                     <p>These are your appointments today.</p>
                 </div>
@@ -264,6 +264,7 @@
         var calendarEl = document.getElementById("f-calendar");
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
+            eventStartEditable: false,
             eventTextColor: "#0f2231",
             allDaySlot: false,
             height: 650,
